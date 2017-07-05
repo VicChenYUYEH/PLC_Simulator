@@ -1,0 +1,132 @@
+C:\Stocker\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Stocker\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Stocker\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Stocker\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Stocker\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Stocker\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\深超\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\深超\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\深超\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\深超\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\深超\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\深超\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\常用基本資料\LFT相關資料\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\VMUSER\Desktop\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+D:\Super\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmM.resources
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe.config
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.exe
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.exe
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\WinLFT_Test.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csprojResolveAssemblyReference.cache
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.Properties.Resources.resources
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.csproj.GenerateResource.Cache
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources

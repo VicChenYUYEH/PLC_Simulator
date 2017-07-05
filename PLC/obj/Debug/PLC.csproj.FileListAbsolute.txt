@@ -1,0 +1,288 @@
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Stocker\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Stocker\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Stocker\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\深超\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\深超\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\深超\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\深超\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\深超\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\常用基本資料\LFT相關資料\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\新增 WinRAR 壓縮檔\新增 WinRAR 壓縮檔\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\superIan\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\VMUSER\Desktop\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Super\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\SuperLiao\Desktop\新增資料夾 (14)\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\常用基本資料\深超專案\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter 模擬器相關\WinLFT_Test\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\SubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.CONV.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.LFT.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.TRU.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache

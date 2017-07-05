@@ -1,0 +1,225 @@
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter 模擬器相關\LFT_Sim\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter(LFC、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\武漢天馬(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter(LFC(含MPLC)、Simulator source)專案分類\TM(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+D:\Lifter相關\Lifter專案分類\MDT(Fork Type)\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\PnP\現場\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\clsLifterMPLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\clsLog.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\clsShareMemory.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\clsDB_C.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\ComSubFun.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\clsErrDef.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csprojResolveAssemblyReference.cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\WinLFT_Test.frmMain.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.Properties.Resources.resources
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.csproj.GenerateResource.Cache
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application

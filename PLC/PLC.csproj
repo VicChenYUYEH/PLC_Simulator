@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07F1269E-B9E1-4E2B-93E1-5FE42E41A8F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLC</RootNamespace>
+    <AssemblyName>PLC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clsDB_C">
+      <HintPath>.\clsDB_C.dll</HintPath>
+    </Reference>
+    <Reference Include="clsErrDef">
+      <HintPath>.\clsErrDef.dll</HintPath>
+    </Reference>
+    <Reference Include="clsLifterMPLC, Version=0.4.1612.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WinLFT_Test\clsLifterMPLC.dll</HintPath>
+    </Reference>
+    <Reference Include="clsLog">
+      <HintPath>.\clsLog.dll</HintPath>
+    </Reference>
+    <Reference Include="clsShareMemory">
+      <HintPath>.\clsShareMemory.dll</HintPath>
+    </Reference>
+    <Reference Include="ComSubFun">
+      <HintPath>.\ComSubFun.dll</HintPath>
+    </Reference>
+    <Reference Include="SubFun">
+      <HintPath>.\SubFun.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>.\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDB.cs" />
+    <Compile Include="clsLC_Def.cs" />
+    <Compile Include="clsLC_SubFun.cs" />
+    <Compile Include="CONV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONV.Designer.cs">
+      <DependentUpon>CONV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LFT.Designer.cs">
+      <DependentUpon>LFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TRU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TRU.Designer.cs">
+      <DependentUpon>TRU.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ACTETHERLib">
+      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ACTMULTILib">
+      <Guid>{A306B141-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CONV.resx">
+      <DependentUpon>CONV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFT.resx">
+      <DependentUpon>LFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRU.resx">
+      <DependentUpon>TRU.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
