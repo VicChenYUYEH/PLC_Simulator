@@ -1031,8 +1031,8 @@ namespace PLC
 
             SpinWait.SpinUntil(() => false, 500);
             FunWriPLC_Bit("D" + iAddr + "0.9", 1);//Wait out 
-            FunWriPLC_Bit("D" + iAddr + "0.C", 0); //load
-            FunWriPLC_Bit("D" + iAddr + "0.D", 1); //Unload ok
+            FunWriPLC_Bit("D" + iAddr + "0.C", 1); //Unload ok
+            FunWriPLC_Bit("D" + iAddr + "0.D", 0); //load
 
             SpinWait.SpinUntil(() => false, 500);
 
