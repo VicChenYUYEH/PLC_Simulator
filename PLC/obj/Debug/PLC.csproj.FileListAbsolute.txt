@@ -285,4 +285,5 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Co
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.dll.config
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache

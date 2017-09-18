@@ -46,6 +46,62 @@ namespace PLC
         {
             set { _bReConn = value; }
         }
+
+        public int iFirstFloor = Properties.Settings.Default.First_Floor;
+        public int iSecondFloor = Properties.Settings.Default.Second_Floor;
+
+        # region MPLC Start Addr
+
+        public int iAddrLFT_Reset = Properties.Settings.Default.MPLC_StartAddr + 25;
+        public int iAddrLFT_Sts1 = Properties.Settings.Default.MPLC_StartAddr + 125;
+        public int iAddrLFT_Sts2 = Properties.Settings.Default.MPLC_StartAddr + 126;
+        public int iAddrLFT_IFSts = Properties.Settings.Default.MPLC_StartAddr + 145;
+        public int iAddrLFT_SeqNo = Properties.Settings.Default.MPLC_StartAddr + 110;
+        public int iAddrLFT_Speed = Properties.Settings.Default.MPLC_StartAddr + 114;
+        public int iAddrLFT_Init = Properties.Settings.Default.MPLC_StartAddr + 118;
+        public int iAddrLFT_ClearSts = Properties.Settings.Default.MPLC_StartAddr + 134;
+        public int iAddrLFT_ClearCmd = Properties.Settings.Default.MPLC_StartAddr + 10;
+        public int iAddrLFT_ErrorCode = Properties.Settings.Default.MPLC_StartAddr + 128;
+        public int iAddrLFT_ErrorIdx = Properties.Settings.Default.MPLC_StartAddr + 129;
+
+        public int iAddrTRU1_Reset = Properties.Settings.Default.MPLC_StartAddr + 45;
+        public int iAddrTRU1_Sts1 = Properties.Settings.Default.MPLC_StartAddr + 175;
+        public int iAddrTRU1_Sts2 = Properties.Settings.Default.MPLC_StartAddr + 176;
+        public int iAddrTRU1_IFSts = Properties.Settings.Default.MPLC_StartAddr + 187;
+        public int iAddrTRU1_SeqNo = Properties.Settings.Default.MPLC_StartAddr + 160;
+        public int iAddrTRU1_Speed = Properties.Settings.Default.MPLC_StartAddr + 164;
+        public int iAddrTRU1_Init = Properties.Settings.Default.MPLC_StartAddr + 168;
+        public int iAddrTRU1_ClearSts = Properties.Settings.Default.MPLC_StartAddr + 183;
+        public int iAddrTRU1_ClearCmd = Properties.Settings.Default.MPLC_StartAddr + 30;
+        public int iAddrTRU1_ErrorCode = Properties.Settings.Default.MPLC_StartAddr + 177;
+        public int iAddrTRU1_ErrorIdx = Properties.Settings.Default.MPLC_StartAddr + 178;
+
+        public int iAddrTRU2_Reset = Properties.Settings.Default.MPLC_StartAddr + 65;
+        public int iAddrTRU2_Sts1 = Properties.Settings.Default.MPLC_StartAddr + 215;
+        public int iAddrTRU2_Sts2 = Properties.Settings.Default.MPLC_StartAddr + 216;
+        public int iAddrTRU2_IFSts = Properties.Settings.Default.MPLC_StartAddr + 227;
+        public int iAddrTRU2_SeqNo = Properties.Settings.Default.MPLC_StartAddr + 200;
+        public int iAddrTRU2_Speed = Properties.Settings.Default.MPLC_StartAddr + 204;
+        public int iAddrTRU2_Init = Properties.Settings.Default.MPLC_StartAddr + 208;
+        public int iAddrTRU2_ClearSts = Properties.Settings.Default.MPLC_StartAddr + 223;
+        public int iAddrTRU2_ClearCmd = Properties.Settings.Default.MPLC_StartAddr + 50;
+        public int iAddrTRU2_ErrorCode = Properties.Settings.Default.MPLC_StartAddr + 217;
+        public int iAddrTRU2_ErrorIdx = Properties.Settings.Default.MPLC_StartAddr + 218;
+
+        public int iAddrPortErrorCode = Properties.Settings.Default.MPLC_StartAddr + 244;
+        public int iAddrPortErrorIndex = Properties.Settings.Default.MPLC_StartAddr + 291;
+        public int iAddrPortErrorBit = Properties.Settings.Default.MPLC_StartAddr + 240;
+        public int[] iAddrPortSts1 = new int[] { Properties.Settings.Default.MPLC_StartAddr + 240, Properties.Settings.Default.MPLC_StartAddr + 300,
+                                                Properties.Settings.Default.MPLC_StartAddr + 360, Properties.Settings.Default.MPLC_StartAddr + 420 };
+        public int[] iAddrPortSts2 = new int[] { Properties.Settings.Default.MPLC_StartAddr + 241, Properties.Settings.Default.MPLC_StartAddr + 301,
+                                                Properties.Settings.Default.MPLC_StartAddr + 361, Properties.Settings.Default.MPLC_StartAddr + 421 };
+        public int[] iAddrPortClearSts = new int[] { Properties.Settings.Default.MPLC_StartAddr + 246, Properties.Settings.Default.MPLC_StartAddr + 306,
+                                                    Properties.Settings.Default.MPLC_StartAddr + 366, Properties.Settings.Default.MPLC_StartAddr + 426 };
+        public int[] iAddrPortCmd = new int[] { Properties.Settings.Default.MPLC_StartAddr + 70, Properties.Settings.Default.MPLC_StartAddr + 72,
+                                                    Properties.Settings.Default.MPLC_StartAddr + 74, Properties.Settings.Default.MPLC_StartAddr + 76 };
+
+        #endregion
+
         #endregion
 
         public MPLC()
@@ -118,7 +174,8 @@ namespace PLC
                 timRead.Enabled = false;
                 _sTimer = System.DateTime.Now.ToString("HH:mm:ss");
 
-                int bRet = FunReadPLC("D30");
+                int iTestAddr = Properties.Settings.Default.MPLC_StartAddr + 30;
+                int bRet = FunReadPLC("D" + iTestAddr);
                 if (!bConnectPLC || bRet == -1)
                 {
                     SubOpenPLC();//重新連線
@@ -184,25 +241,22 @@ namespace PLC
         /// <returns>流程步驟編號</returns>
         public int LFT_T1_Proc()
         {
-            bool bRet = FunWriPLC_Bit("D125.A", 0);  // abnormal complete off    
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 125;
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".A", 0);  // abnormal complete off    
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + 111;
 
             switch (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode)
             {
                 case clsLifterMPLC.MPLC.enuCommandMode.Move:   // 如果是move的話 行動完結進行 normal complete  &  清值
                     {
-                        int iData = 0;
-                        string sAddr = "";
-                        iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.To;
-                        sAddr = "D111";
-                        bRet = FunWriPLC_Word(sAddr, iData);
+                        int iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.To;
+                        bRet = FunWriPLC_Word("D" + iAddr, iData);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // move on
 
                         SpinWait.SpinUntil(() => false, 500);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 0); // move off   
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 0); // move off   
 
                         return 20;
                     }
@@ -210,38 +264,28 @@ namespace PLC
                 case clsLifterMPLC.MPLC.enuCommandMode.PickUp:
                 case clsLifterMPLC.MPLC.enuCommandMode.Transfer:  // 如果是pick up 或 transfer command的話 移動到location from 
                     {
-                        int iData = 0;
-                        string sAddr = "";
-                        iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.Form; //current location  = From
-                        sAddr = "D111";
-                        bRet = FunWriPLC_Word(sAddr, iData);
+                        int iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.Form; //current location  = From
+                        bRet = FunWriPLC_Word("D" + iAddr, iData);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // move on
 
                         SpinWait.SpinUntil(() => false, 500);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 0); // move off
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 0); // move off
 
                         return 2;
                     }
 
                 case clsLifterMPLC.MPLC.enuCommandMode.Deposite:  // 如果是deposite 的話 移動到location to  
                     {
-                        int iData = 0;
-                        string sAddr = "";
-                        iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.To; //current location  = To
-                        sAddr = "D111";
-                        bRet = FunWriPLC_Word(sAddr, iData);
+                        int iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.To; //current location  = To
+                        bRet = FunWriPLC_Word("D" + iAddr, iData);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // move on
 
                         SpinWait.SpinUntil(() => false, 500);
 
-                        sAddr = "D111.F";
-                        bRet = FunWriPLC_Bit(sAddr, 0); // move off
+                        bRet = FunWriPLC_Bit("D" + iAddr + ".F", 0); // move off
 
                         return 10;
                     }
@@ -255,20 +299,11 @@ namespace PLC
         /// 選擇取物流程
         /// </summary>
         /// <returns>流程步驟編號</returns>
-        public int LFT_SelectFrom(bool b2Word)
+        public int LFT_SelectFrom()
         {
-            string sAddr = "";
-            int iAddr1 = 6 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2) * 2;
-            int iAddr2 = 5 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2);
-            if (b2Word)
-            {
-                sAddr = "D14" + iAddr1 + ".8";
-            }
-            else
-            {
-                sAddr = "D14" + iAddr2 + ".0";
-            }
-            bool bRet = FunWriPLC_Bit(sAddr, 1); // LDRQ on
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 145 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2);
+
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".0", 1); // LDRQ on
 
             SpinWait.SpinUntil(() => false, 300);
 
@@ -301,48 +336,39 @@ namespace PLC
         /// </summary>
         /// <param name="iTRU">TRU編號</param>
         /// <returns>流程步驟編號</returns>
-        public int LFT_Pick_up_TRU(TRU iTRU, bool b2Word)
+        public int LFT_Pick_up_TRU(TRU iTRU)
         {
             int[] sData = new int[7];
-            string sAddr = "";
             int inum = (int)iTRU - 1;
-            int iAddr1 = 6 + (inum) * 2;
-            int iAddr2 = 5 + (inum);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 145 + (inum);
+
             if (clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].IFSts.UDRQ == clsLifterMPLC.MPLC.enuSignal.OFF || clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].IFSts.UDRQ == clsLifterMPLC.MPLC.enuSignal.ON
                 && clsLifterMPLC.MPLC.LFC_C.L2LFC.PortSts[inum].LDRQ == clsLifterMPLC.MPLC.enuSignal.ON)
             {
-                if (b2Word)
-                {
-                    sAddr = "D14" + iAddr1 + ".8";
-                }
-                else
-                {
-                    sAddr = "D14" + iAddr2 + ".0";
-                }
-                bool bRet = FunWriPLC_Bit(sAddr, 0); // LDRQ off
+                bool bRet = FunWriPLC_Bit("D" + iAddr + ".0", 0); // LDRQ off
             }
 
             if (clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].CSTID == "")
             {
                 sData = funString2int(clsLifterMPLC.MPLC.LFC_C.LFC2L.CSTID, 7);
 
-                sAddr = "D118";
-                bool bRet = FunWriPLC_Word(sAddr, sData[0]);
-                sAddr = "D119";
-                bRet = FunWriPLC_Word(sAddr, sData[1]);
-                sAddr = "D120";
-                bRet = FunWriPLC_Word(sAddr, sData[2]);
-                sAddr = "D121";
-                bRet = FunWriPLC_Word(sAddr, sData[3]);
-                sAddr = "D122";
-                bRet = FunWriPLC_Word(sAddr, sData[4]);
-                sAddr = "D123";
-                bRet = FunWriPLC_Word(sAddr, sData[5]);
-                sAddr = "D124";
-                bRet = FunWriPLC_Word(sAddr, sData[6]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 118;
+                bool bRet = FunWriPLC_Word("D" + iAddr, sData[0]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 119;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[1]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 120;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[2]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 121;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[3]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 122;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[4]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 123;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[5]);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 124;
+                bRet = FunWriPLC_Word("D" + iAddr, sData[6]);
 
-                sAddr = "D126.F";
-                bRet = FunWriPLC_Bit(sAddr, 1); // CST in cage
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 126;
+                bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // CST in cage
 
                 if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode == clsLifterMPLC.MPLC.enuCommandMode.Transfer)
                 {
@@ -356,34 +382,18 @@ namespace PLC
                 }
             }
             else
-                if (iTRU == MPLC.TRU.L10)
-                {
-                    return 7;
-                }
-                else
-                {
-                    return 8;
-                }
+                return (iTRU == MPLC.TRU.L10)? 7:8;
         }
 
         /// <summary>
         /// 選擇置物流程
         /// </summary>
         /// <returns>流程步驟編號</returns>
-        public int LFT_SelectTo(bool b2Word)
+        public int LFT_SelectTo()
         {
-            string sAddr = "";
-            int iAddr1 = 5 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2) * 2;
-            int iAddr2 = 5 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2);
-            if (b2Word)
-            {
-                sAddr = "D14" + iAddr1 + ".8";
-            }
-            else
-            {
-                sAddr = "D14" + iAddr2 + ".1";
-            }
-            bool bRet = FunWriPLC_Bit(sAddr, 1); // UDRQ on
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 145 + (clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc - 2);
+
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".1", 1); // UDRQ on
 
             SpinWait.SpinUntil(() => false, 300);
 
@@ -417,43 +427,28 @@ namespace PLC
         /// </summary>
         /// <param name="iTRU">TRU編號</param>
         /// <returns>流程步驟編號</returns>
-        public int LFT_Deposite_TRU(TRU iTRU, bool b2Word)
+        public int LFT_Deposite_TRU(TRU iTRU)
         {
-            string sAddr = "";
             int inum = (int)iTRU - 1;
-            int iAddr1 = 5 + (inum) * 2;
-            int iAddr2 = 5 + (inum);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 145 + (inum);
 
-            if (b2Word)
-            {
-                sAddr = "D14" + iAddr1 + ".8";
-            }
-            else
-            {
-                sAddr = "D14" + iAddr2 + ".1";
-            }
-            bool bRet = FunWriPLC_Bit(sAddr, 0); // UDRQ off
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".1", 0); // UDRQ off
 
             if (clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].IFSts.LDRQ == clsLifterMPLC.MPLC.enuSignal.OFF)
             {
                 string sData = "";
                 sData = "0,0,0,0,0,0,0";
-                sAddr = "D118"; //CSTID
-                bRet = FunWriPLC_Word(sAddr, sData);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 118; //CSTID
+                bRet = FunWriPLC_Word("D" + iAddr, sData);
 
-                sAddr = "D126.F";
-                bRet = FunWriPLC_Bit(sAddr, 0); // CST in cage off                                      
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 126;
+                bRet = FunWriPLC_Bit("D" + iAddr +".F", 0); // CST in cage off                                      
 
                 SpinWait.SpinUntil(() => false, 600);
                 return 20;
             }
             else
-                if ((int)iTRU == 1)
-                {
-                    return 15;
-                }
-                else
-                    return 16;
+                return ((int)iTRU == 1)? 15:16;
         }
 
         /// <summary>
@@ -463,10 +458,10 @@ namespace PLC
         public int LFT_TransferMove()
         {
             int iData = 0;
-            string sAddr = "";
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 111;
             iData = (int)clsLifterMPLC.MPLC.LFC_C.LFC2L.To; //current location  = To
-            sAddr = "D111";
-            bool bRet = FunWriPLC_Word(sAddr, iData);
+
+            bool bRet = FunWriPLC_Word("D" + iAddr, iData);
 
             SpinWait.SpinUntil(() => false, 700);
             return 10;
@@ -478,19 +473,17 @@ namespace PLC
         /// <returns>流程步驟編號</returns>
         public int LFT_Normal_Fin()
         {
-            string sAddr = "";
-            sAddr = "D125.9";
-            bool bRet = FunWriPLC_Bit(sAddr, 1);  // Normal complete
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 125;
+            bool bRet = FunWriPLC_Bit("D" + iAddr +".9", 1);  // Normal complete
 
             string sData = "";
             sData = "0,0,0,0,0,0,0,0,0,0,0";
-            sAddr = "D10";
-            bRet = FunWriPLC_Word(sAddr, sData);
-
-            sAddr = "D125.1";
-            bRet = FunWriPLC_Bit(sAddr, 1); // ready on
-            sAddr = "D125.2";
-            bRet = FunWriPLC_Bit(sAddr, 0);  // busy off
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + 10;
+            bRet = FunWriPLC_Word("D" + iAddr, sData);
+            
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + 125;
+            bRet = FunWriPLC_Bit("D" + iAddr + ".1", 1);  // ready on
+            bRet = FunWriPLC_Bit("D" + iAddr + ".2", 0);  // busy off
 
             return 0;
         }
@@ -507,11 +500,10 @@ namespace PLC
         public int TRU_T1_Proc(TRU iTRU)
         {
             int inum = (int)iTRU - 1;
-            string sAddr1 = "D" + (161 + (inum * 40));
-            string sAddr2 = sAddr1 + ".F";
-            string sAddr = "D" + (175 + (inum * 40) + ".A");
+            int iAddr1 = Properties.Settings.Default.MPLC_StartAddr + (161 + (inum * 40));
+            int iAddr2 = Properties.Settings.Default.MPLC_StartAddr + (175 + (inum * 40));
 
-            bool bRet = FunWriPLC_Bit(sAddr, 0);  // abnormal complete off
+            bool bRet = FunWriPLC_Bit("D" + iAddr2 + ".A", 0);  // abnormal complete off
 
             switch (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].LFCmdMode)
             {
@@ -519,12 +511,12 @@ namespace PLC
                     {
                         string sData = "";
                         sData = clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].To.ToString(); //current location  = To
-                        bRet = FunWriPLC_Word(sAddr1, sData);
+                        bRet = FunWriPLC_Word("D" + iAddr1, sData);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 1); // move on
                         SpinWait.SpinUntil(() => false, 700);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 0); // move off
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 0); // move off
                         SpinWait.SpinUntil(() => false, 700);
                         return 20;
                     }
@@ -533,12 +525,12 @@ namespace PLC
                     {
                         string sData = "";
                         sData = clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].Form.ToString(); //current location  = From
-                        bRet = FunWriPLC_Word(sAddr1, sData);
+                        bRet = FunWriPLC_Word("D" + iAddr1, sData);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 1); // move on
                         SpinWait.SpinUntil(() => false, 700);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 0); // move off
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 0); // move off
                         SpinWait.SpinUntil(() => false, 700);
                         return 2;
                     }
@@ -547,12 +539,12 @@ namespace PLC
                     {
                         string sData = "";
                         sData = clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].To.ToString(); //current location  = To
-                        bRet = FunWriPLC_Word(sAddr1, sData);
+                        bRet = FunWriPLC_Word("D" + iAddr1, sData);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 1); // move on
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 1); // move on
                         SpinWait.SpinUntil(() => false, 700);
 
-                        bRet = FunWriPLC_Bit(sAddr2, 0); // move off
+                        bRet = FunWriPLC_Bit("D" + iAddr1 + ".F", 0); // move off
                         SpinWait.SpinUntil(() => false, 700);
                         return 10;
                     }
@@ -569,13 +561,9 @@ namespace PLC
         public int TRU_T2_Select(TRU iTRU)
         {
             int inum = (int)iTRU - 1;
-            int iAddr = 187 + (inum * 40);
-            string sAddr = "D" + iAddr + ".0";
-            bool bRet = FunWriPLC_Bit(sAddr, 1); // LDRQ on
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 187 + (inum * 40);
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".0", 1); // LDRQ on
 
-            //if (iConvPortID.Contains(clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].CurrentLV.CurrentLoc)) //代表取物目標是convery
-            //{
-            //}
             SpinWait.SpinUntil(() => false, 500);
 
             if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0)  // 代表取物目標是 Lifter
@@ -603,14 +591,16 @@ namespace PLC
         {
             int inum = (int)iTRU - 1;
             int[] sData = new int[7]{0,0,0,0,0,0,0};
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (187 + (inum * 40));
 
-            bool bRet = FunWriPLC_Bit("D" + (187 + (inum * 40)) + ".0", 0); // LDRQ off    
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".0", 0); // LDRQ off    
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".E", 1); // forking on
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
+            bRet = FunWriPLC_Bit("D" + iAddr + ".E", 1); // forking on
 
             SpinWait.SpinUntil(() => false, 600);
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".E", 0); // forking off
+            bRet = FunWriPLC_Bit("D" + iAddr + ".E", 0); // forking off
 
             switch ((int)iTRU)
             {
@@ -619,7 +609,7 @@ namespace PLC
                     {
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].Form == clsLC_Def.dicCONDef[i].PLCPortID)
                         {
-                            if(clsLC_Def.dicCONDef[i].Floor == 2)
+                            if(clsLC_Def.dicCONDef[i].Floor == Properties.Settings.Default.First_Floor)
                             {
                                 PortSignalSelect(clsLC_Def.dicCONDef[i].PLCindex, false, sData);
                                 break;
@@ -633,7 +623,7 @@ namespace PLC
                     {
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].Form == clsLC_Def.dicCONDef[i].PLCPortID)
                         {
-                            if (clsLC_Def.dicCONDef[i].Floor == 3)
+                            if (clsLC_Def.dicCONDef[i].Floor == Properties.Settings.Default.Second_Floor)
                             {
                                 PortSignalSelect(clsLC_Def.dicCONDef[i].PLCindex, false, sData);
                                 break;
@@ -645,16 +635,17 @@ namespace PLC
 
 
             sData = funString2int(clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].CSTID, 7);//CSTID
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (inum * 40));
 
-            bRet = FunWriPLC_Word("D" + (168 + (inum * 40)), sData[0]);
-            bRet = FunWriPLC_Word("D" + (169 + (inum * 40)), sData[1]);
-            bRet = FunWriPLC_Word("D" + (170 + (inum * 40)), sData[2]);
-            bRet = FunWriPLC_Word("D" + (171 + (inum * 40)), sData[3]);
-            bRet = FunWriPLC_Word("D" + (172 + (inum * 40)), sData[4]);
-            bRet = FunWriPLC_Word("D" + (173 + (inum * 40)), sData[5]);
-            bRet = FunWriPLC_Word("D" + (174 + (inum * 40)), sData[6]);
+            for (int i = 0; i < 7; i++)
+            {
+                bRet = FunWriPLC_Word("D" + iAddr, sData[i]);
+                iAddr++;
+            }
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".F", 1); // stock on fork on
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
+
+            bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // stock on fork on
 
             if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].LFCmdMode == clsLifterMPLC.MPLC.enuCommandMode.Transfer)
             {
@@ -678,12 +669,12 @@ namespace PLC
             if (clsLifterMPLC.MPLC.LFC_C.L2LFC.PortSts[inum].UDRQ == clsLifterMPLC.MPLC.enuSignal.ON ||
                 clsLifterMPLC.MPLC.LFC_C.L2LFC.PortSts[inum].UDRQ == clsLifterMPLC.MPLC.enuSignal.OFF && clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].IFSts.LDRQ == clsLifterMPLC.MPLC.enuSignal.ON)
             {
-                iAddr = 187 + inum * 40;
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (187 + inum * 40);
                 bool bRet = FunWriPLC_Bit("D" + iAddr + ".0", 0); // LDRQ off
             }
             if (clsLifterMPLC.MPLC.LFC_C.LFC2L.CSTID == "")
             {
-                iAddr = 176 + inum * 40;
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + inum * 40);
                 bool bRet = FunWriPLC_Bit("D" + iAddr + ".E", 1); // forking on
 
                 SpinWait.SpinUntil(() => false, 500);
@@ -702,20 +693,22 @@ namespace PLC
         {
             int[] sData = new int[7];
             int inum = (int)iTRU - 1;
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
 
-            bool bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".E", 0); // forking off
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".E", 0); // forking off
 
             sData = funString2int(clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].CSTID, 7);//CSTID
 
-            bRet = FunWriPLC_Word("D" + (168 + (inum * 40)), sData[0]);
-            bRet = FunWriPLC_Word("D" + (169 + (inum * 40)), sData[1]);
-            bRet = FunWriPLC_Word("D" + (170 + (inum * 40)), sData[2]);
-            bRet = FunWriPLC_Word("D" + (171 + (inum * 40)), sData[3]);
-            bRet = FunWriPLC_Word("D" + (172 + (inum * 40)), sData[4]);
-            bRet = FunWriPLC_Word("D" + (173 + (inum * 40)), sData[5]);
-            bRet = FunWriPLC_Word("D" + (174 + (inum * 40)), sData[6]);
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (inum * 40));
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".F", 1); // stock on fork on
+            for (int i = 0; i < 7; i++)
+            {
+                bRet = FunWriPLC_Word("D" + iAddr, sData[i]);
+                iAddr++;
+            }
+
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
+            bRet = FunWriPLC_Bit("D" + iAddr + ".F", 1); // stock on fork on
 
 
             if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].LFCmdMode == clsLifterMPLC.MPLC.enuCommandMode.Transfer)
@@ -738,14 +731,10 @@ namespace PLC
         public int TRU_T3_Select(TRU iTRU)
         {
             int inum = (int)iTRU - 1;
-            int iAddr = 187 + (inum * 40);
-            string sAddr = "D" + iAddr + ".1";
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + 187 + (inum * 40);
 
-            bool bRet = FunWriPLC_Bit(sAddr, 1); // UDRQ on
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".1", 1); // UDRQ on
 
-            //if (iConvPortID.Contains(clsLifterMPLC.MPLC.LFC_C.T2LFC[inum].CurrentLV.CurrentLoc))
-            //{
-            //}
             SpinWait.SpinUntil(() => false, 500);
 
             if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0)  // 代表放物目標是 Lifter
@@ -775,20 +764,24 @@ namespace PLC
             int inum = (int)iTRU - 1;
             string sData = "";
             int[] CSTID_Data = new int[7];
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (187 + (inum * 40));
 
-            bool bRet = FunWriPLC_Bit("D" + (187 + (inum * 40)) + ".1", 0); // UDRQ off    
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".E", 1); // forking on
+            bool bRet = FunWriPLC_Bit("D" + iAddr + ".1", 0); // UDRQ off    
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
+            bRet = FunWriPLC_Bit("D" + iAddr + ".E", 1); // forking on
 
             SpinWait.SpinUntil(() => false, 600);
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".E", 0); // forking off
+            bRet = FunWriPLC_Bit("D" + iAddr + ".E", 0); // forking off
 
             CSTID_Data = funString2int(clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].CSTID, 7);//CSTID
 
             sData = "0,0,0,0,0,0,0"; //CSTID off
-            bRet = FunWriPLC_Word("D" + (168 + (inum * 40)), sData);
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (inum * 40));
+            bRet = FunWriPLC_Word("D" + iAddr, sData);
 
-            bRet = FunWriPLC_Bit("D" + (176 + (inum * 40)) + ".F", 0); // stock on fork off
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (inum * 40));
+            bRet = FunWriPLC_Bit("D" + iAddr + ".F", 0); // stock on fork off
 
             switch ((int)iTRU)
             {
@@ -797,7 +790,7 @@ namespace PLC
                     {
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].To == clsLC_Def.dicCONDef[i].PLCPortID)
                         {
-                            if(clsLC_Def.dicCONDef[i].Floor == 2)
+                            if(clsLC_Def.dicCONDef[i].Floor == Properties.Settings.Default.First_Floor)
                             {
                                 PortSignalSelect(clsLC_Def.dicCONDef[i].PLCindex, true, CSTID_Data);
                                 break;
@@ -811,7 +804,7 @@ namespace PLC
                     {
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].To == clsLC_Def.dicCONDef[i].PLCPortID)
                         {
-                            if(clsLC_Def.dicCONDef[i].Floor == 3)
+                            if(clsLC_Def.dicCONDef[i].Floor == Properties.Settings.Default.Second_Floor)
                             {
                                 PortSignalSelect(clsLC_Def.dicCONDef[i].PLCindex, true, CSTID_Data);
                                 break;
@@ -831,21 +824,21 @@ namespace PLC
         /// <returns>流程步驟編號</returns>
         public int TRU_T3_Fin(TRU iTRU)
         {
-            int iAddr = 0;
             int inum = (int)iTRU - 1;
 
-            iAddr = 187 + (40 * inum);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (187 + (40 * inum));
             bool bRet = FunWriPLC_Bit("D" + iAddr + ".1", 0); // UDRQ off
 
             if (clsLifterMPLC.MPLC.LFC_C.L2LFC.PortSts[inum].LDRQ == clsLifterMPLC.MPLC.enuSignal.OFF)
             {
-                iAddr = 176 + (40 * inum);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (40 * inum));
                 bRet = FunWriPLC_Bit("D" + iAddr + ".E", 1); // forking on                                
 
                 string sData = "0,0,0,0,0,0,0"; //CSTID off
-                bRet = FunWriPLC_Word("D" + (168 + (inum * 40)), sData);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (inum * 40));
+                bRet = FunWriPLC_Word("D" + iAddr, sData);
 
-                iAddr = 176 + (40 * inum);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (40 * inum));
                 bRet = FunWriPLC_Bit("D" + iAddr + ".F", 0); // stock on fork off  
                 bRet = FunWriPLC_Bit("D" + iAddr + ".E", 0); // forking off
 
@@ -864,7 +857,7 @@ namespace PLC
         {
             int inum = (int)iTRU - 1;
             string sData = "";
-            int iAddr = 161 + (inum * 40);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (161 + (inum * 40));
             sData = clsLifterMPLC.MPLC.LFC_C.LFC2T[inum].To.ToString(); //current location  = To
             bool bRet = FunWriPLC_Word("D" + iAddr, sData);
 
@@ -880,16 +873,17 @@ namespace PLC
         public int TRU_NormalFin(TRU iTRU)
         {
             int inum = (int)iTRU - 1;
-            int iAddr = 175 + (inum * 40);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (175 + (inum * 40));
             string sData = "";
 
             SpinWait.SpinUntil(() => false, 500);
             bool bRet = FunWriPLC_Bit("D" + iAddr + ".9", 1);  // Normal complete
             sData = "0,0,0,0,0,0,0,0,0,0,0";
 
-            int iAddr2 = 30 + (20 * inum);
-            bRet = FunWriPLC_Word("D" + iAddr2, sData);
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (30 + (20 * inum));
+            bRet = FunWriPLC_Word("D" + iAddr, sData);
 
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (175 + (inum * 40));
             bRet = FunWriPLC_Bit("D" + iAddr + ".1", 1); // ready on
             bRet = FunWriPLC_Bit("D" + iAddr + ".2", 0);  // busy off
 
@@ -904,26 +898,28 @@ namespace PLC
         /// <param name="bOn_Off">選擇On還是Off</param>
         public void PortSignalSelect(int iPLCIdx, bool bOn_Off, int[] sData)
         {
-            int iaddr1 = 241 + 60 * iPLCIdx;
-            int iaddr2 = 240 + 60 * iPLCIdx;
-            int iaddrCSTID = 246 + 60 * iPLCIdx;
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * iPLCIdx);
 
             if (bOn_Off)
             {
-                FunWriPLC_Bit("D" + iaddr1 + ".0", 1); //荷有
-                FunWriPLC_Bit("D" + iaddr2 + ".C", 0); //load ok
+                FunWriPLC_Bit("D" + iAddr + ".0", 1); //荷有
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * iPLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".C", 0); //load ok
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * iPLCIdx);
                 for (int i = 0; i <= 6; i++)
                 {
-                    FunWriPLC_Word("D" + iaddrCSTID, sData[i].ToString());
-                    iaddrCSTID++;
+                    FunWriPLC_Word("D" + iAddr, sData[i].ToString());
+                    iAddr++;
                 }
             }
             else
             {
-                FunWriPLC_Bit("D" + iaddr1 + ".0", 0); //荷有
-                FunWriPLC_Bit("D" + iaddr2 + ".C", 1); //load ok
-                FunWriPLC_Bit("D" + iaddr2 + ".D", 0); //unload
-                FunWriPLC_Word("D" + iaddrCSTID, "0,0,0,0,0,0,0");
+                FunWriPLC_Bit("D" + iAddr + ".0", 0); //荷有
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * iPLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".C", 1); //load ok
+                FunWriPLC_Bit("D" + iAddr + ".D", 0); //unload
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * iPLCIdx);
+                FunWriPLC_Word("D" + iAddr, "0,0,0,0,0,0,0");
 
             }
         }
@@ -959,14 +955,17 @@ namespace PLC
         /// <param name="iConv"></param>
         public void Remove(int PLCIdx)
         {
-            int iAddr = 24 + 6 * PLCIdx;
-            FunWriPLC_Bit("D" + iAddr + "1.F", 1);
-            FunWriPLC_Bit("D" + iAddr + "1.0", 0); //荷有
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * PLCIdx);
+
+            FunWriPLC_Bit("D" + iAddr + ".F", 1);
+            FunWriPLC_Bit("D" + iAddr + ".0", 0); //荷有
             SpinWait.SpinUntil(() => false, 500);
-            FunWriPLC_Bit("D" + iAddr + "1.F", 0);
-            FunWriPLC_Bit("D" + iAddr + "0.C", 1); //load ok
-            FunWriPLC_Bit("D" + iAddr + "0.D", 0); //unload ok
-            FunWriPLC_Word("D" + iAddr + "6", "0,0,0,0,0,0,0");
+            FunWriPLC_Bit("D" + iAddr + ".F", 0);
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+            FunWriPLC_Bit("D" + iAddr + ".C", 1); //load ok
+            FunWriPLC_Bit("D" + iAddr + ".D", 0); //unload ok
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx);
+            FunWriPLC_Word("D" + iAddr , "0,0,0,0,0,0,0");
         }
 
         /// <summary>
@@ -976,39 +975,40 @@ namespace PLC
         /// <param name="sData">寫入ID序號</param>
         public void Wait_In(int PLCIdx, int[] sData)
         {
-            int iAddr = 24 + 6 * PLCIdx;
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
             int iAddr2 = 28 + 6 * PLCIdx;
 
-            if (Convert.ToString(FunReadPLC("D" + iAddr + "0"), 2).PadLeft(16, Convert.ToChar("0")).Substring(12, 1) == "1")
+            if (Convert.ToString(FunReadPLC("D" + iAddr), 2).PadLeft(16, Convert.ToChar("0")).Substring(12, 1) == "1")
             {
-                FunWriPLC_Word("D" + iAddr2 + "1", sData[0].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "2", sData[1].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "3", sData[2].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "4", sData[3].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "5", sData[4].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "6", sData[5].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "7", sData[6].ToString());
-                FunWriPLC_Bit("D" + iAddr + "1.0", 1); //荷有
-                FunWriPLC_Bit("D" + iAddr + "1.9", 1);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (281 + 60 * PLCIdx);
+                for (int i = 0; i < 7; i++)
+                {
+                    FunWriPLC_Word("D" + iAddr, sData[i].ToString());
+                    iAddr++;
+                }
+
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * PLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".0", 1); //荷有
+                FunWriPLC_Bit("D" + iAddr + ".9", 1);
 
                 SpinWait.SpinUntil(() => false, 200);
 
-                int iAddr3 = 25 + 6 * PLCIdx;
-                FunWriPLC_Word("D" + iAddr + "6", sData[0].ToString());
-                FunWriPLC_Word("D" + iAddr + "7", sData[1].ToString());
-                FunWriPLC_Word("D" + iAddr + "8", sData[2].ToString());
-                FunWriPLC_Word("D" + iAddr + "9", sData[3].ToString());
-                FunWriPLC_Word("D" + iAddr3 + "0", sData[4].ToString());
-                FunWriPLC_Word("D" + iAddr3 + "1", sData[5].ToString());
-                FunWriPLC_Word("D" + iAddr3 + "2", sData[6].ToString());
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx);
+                for (int i = 0; i < 7; i++)
+                {
+                    FunWriPLC_Word("D" + iAddr , sData[i].ToString());
+                    iAddr++;
+                }
 
-                FunWriPLC_Bit("D" + iAddr + "0.8", 1);
-                FunWriPLC_Bit("D" + iAddr + "1.9", 0);
-                FunWriPLC_Bit("D" + iAddr + "0.D", 1); //unload ok
-                FunWriPLC_Bit("D" + iAddr + "0.C", 0); //load
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * PLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".9", 0);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".8", 1);
+                FunWriPLC_Bit("D" + iAddr + ".D", 1); //unload ok
+                FunWriPLC_Bit("D" + iAddr + ".C", 0); //load
 
                 SpinWait.SpinUntil(() => false, 500);
-                FunWriPLC_Bit("D" + iAddr + "0.8", 0);
+                FunWriPLC_Bit("D" + iAddr + ".8", 0);
             }
         }
 
@@ -1019,24 +1019,23 @@ namespace PLC
         /// <param name="sData">寫入ID序號</param>
         public void Wait_Out(int PLCIdx, int[] sData)
         {
-            int iAddr = 24 + 6 * PLCIdx;
-            int iAddr2 = 25 + 6 * PLCIdx;
-            FunWriPLC_Word("D" + iAddr + "6", sData[0].ToString());  // 位置 1
-            FunWriPLC_Word("D" + iAddr + "7", sData[1].ToString());
-            FunWriPLC_Word("D" + iAddr + "8", sData[2].ToString());
-            FunWriPLC_Word("D" + iAddr + "9", sData[3].ToString());
-            FunWriPLC_Word("D" + iAddr2 + "0", sData[4].ToString());
-            FunWriPLC_Word("D" + iAddr2 + "1", sData[5].ToString());
-            FunWriPLC_Word("D" + iAddr2 + "2", sData[6].ToString());
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx);
+
+            for (int i = 0; i < 7; i++)
+            {
+                FunWriPLC_Word("D" + iAddr, sData[i].ToString());  // 位置 1
+                iAddr++;
+            }
 
             SpinWait.SpinUntil(() => false, 500);
-            FunWriPLC_Bit("D" + iAddr + "0.9", 1);//Wait out 
-            FunWriPLC_Bit("D" + iAddr + "0.C", 1); //Unload ok
-            FunWriPLC_Bit("D" + iAddr + "0.D", 0); //load
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+            FunWriPLC_Bit("D" + iAddr + ".9", 1);//Wait out 
+            FunWriPLC_Bit("D" + iAddr + ".C", 1); //Unload ok
+            FunWriPLC_Bit("D" + iAddr + ".D", 0); //load
 
             SpinWait.SpinUntil(() => false, 500);
 
-            FunWriPLC_Bit("D" + iAddr + "0.9", 0);
+            FunWriPLC_Bit("D" + iAddr + ".9", 0);
         }
 
         /// <summary>
@@ -1046,32 +1045,33 @@ namespace PLC
         public void ModeChange(int PLCIdx)
         {
             int iPLCInfo = 0;
-            int iAddrLFC2PLC = 70 + PLCIdx * 2;
-            int iAddrPLC2LFC = 240 + 60 * PLCIdx;
-            int iAddrPLC2LFC_Item = iAddrPLC2LFC + 1;
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * PLCIdx);
 
-            objPLC.GetDevice("D" + iAddrPLC2LFC_Item + ".0", out iPLCInfo);
+            objPLC.GetDevice("D" + iAddr + ".0", out iPLCInfo);
 
             if (iPLCInfo == 1) //確認無荷有
             {
                 MessageBox.Show("You must remove carrier before port mode change.");
                 return;
             }
-            objPLC.GetDevice("D" + iAddrPLC2LFC + ".3", out iPLCInfo); //讀取當前In/out狀態
+            iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+            objPLC.GetDevice("D" + iAddr + ".3", out iPLCInfo); //讀取當前In/out狀態
 
             if (iPLCInfo == 1) //Input->Output
             {
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + ".3", 0);  // input mode
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + ".4", 1);  // output mode
-                FunWriPLC_Bit("D" + iAddrLFC2PLC + ".E", 0);  // input mode
-                FunWriPLC_Bit("D" + iAddrLFC2PLC + ".F", 0);  // output mode   
+                FunWriPLC_Bit("D" + iAddr + ".3", 0);  // input mode
+                FunWriPLC_Bit("D" + iAddr + ".4", 1);  // output mode
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (70 + PLCIdx * 2);
+                FunWriPLC_Bit("D" + iAddr + ".E", 0);  // input mode
+                FunWriPLC_Bit("D" + iAddr + ".F", 0);  // output mode   
             }
             else    //Output->Input
             {
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + ".3", 1);  // input mode
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + ".4", 0);  // output mode
-                FunWriPLC_Bit("D" + iAddrLFC2PLC + ".E", 0);  // input mode
-                FunWriPLC_Bit("D" + iAddrLFC2PLC + ".F", 0);  // output mode   
+                FunWriPLC_Bit("D" + iAddr + ".3", 1);  // input mode
+                FunWriPLC_Bit("D" + iAddr + ".4", 0);  // output mode
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (70 + PLCIdx * 2);
+                FunWriPLC_Bit("D" + iAddr + ".E", 0);  // input mode
+                FunWriPLC_Bit("D" + iAddr + ".F", 0);  // output mode   
             }
         }
 
@@ -1081,27 +1081,31 @@ namespace PLC
         /// <param name="iConv">Port 編號</param>
         public void Run2Stop2Run(Conveyor iConv)
         {
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * ((int)iConv - 1));
             int iAddrPLC2LFC = 24 + 6 * ((int)iConv - 1);
             if (clsLifterMPLC.MPLC.LFC_C.LFC2C[(int)iConv - 1].CMDMode.Stop == clsLifterMPLC.MPLC.enuSignal.ON)
             {
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.0", 0);
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.1", 1);
+                FunWriPLC_Bit("D" + iAddr + ".0", 0);
+                FunWriPLC_Bit("D" + iAddr + ".1", 1);
                 SpinWait.SpinUntil(() => false, 300);
 
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.B", 0);
-                FunWriPLC_Bit("D" + iAddrPLC2LFC + "3.0", 1); //Run Enable
+                FunWriPLC_Bit("D" + iAddr + ".B", 0);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (243 + 60 * ((int)iConv - 1));
+                FunWriPLC_Bit("D" + iAddr + ".0", 1); //Run Enable
                 SpinWait.SpinUntil(() => false, 500);
             }
             if (clsLifterMPLC.MPLC.LFC_C.LFC2C[(int)iConv - 1].CMDMode.Run == clsLifterMPLC.MPLC.enuSignal.ON)
             {
                 if (clsLifterMPLC.MPLC.LFC_C.C2LFC[(int)iConv - 1].Sts_4.RunEnable == clsLifterMPLC.MPLC.enuSignal.ON)
                 {
-                    FunWriPLC_Bit("D" + iAddrPLC2LFC + "3.0", 0);
-                    FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.B", 1);
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (243 + 60 * ((int)iConv - 1));
+                    FunWriPLC_Bit("D" + iAddr + ".0", 0);
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * ((int)iConv - 1));
+                    FunWriPLC_Bit("D" + iAddr + ".B", 1);
                     SpinWait.SpinUntil(() => false, 300);
 
-                    FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.0", 1);
-                    FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.1", 0);
+                    FunWriPLC_Bit("D" + iAddr + ".0", 1);
+                    FunWriPLC_Bit("D" + iAddr + ".1", 0);
                     SpinWait.SpinUntil(() => false, 500);
                 }
             }
@@ -1115,47 +1119,42 @@ namespace PLC
         /// <param name="sData"></param>
         public void PresentOnOff(int PLCIdx, int StageNo, int[] sData)
         {
-            int iAddr = 24 + 6 * PLCIdx;
-            int iAddrCSTID = (iAddr * 10) + 6;
-            int iAddr2 = 28 + 6 * PLCIdx;
             int iPLCInfo = 0;
-            int iAddrLFC2PLC = 70 + PLCIdx * 2;
-            int iAddrPLC2LFC = 240 + 60 * PLCIdx;
-            string sAddrPLC2LFC_CSTID = (iAddrPLC2LFC + 6 + (7 * (StageNo - 1))).ToString();
-            int iAddrPLC2LFC_Item = iAddrPLC2LFC + 1;
-            string sAddrPLC2LFC_Item = iAddrPLC2LFC_Item.ToString() + "." + (StageNo - 1).ToString();
 
-            objPLC.GetDevice("D" + sAddrPLC2LFC_Item, out iPLCInfo);
+            int iAddr = Properties.Settings.Default.MPLC_StartAddr + (241 + 60 * PLCIdx);
+            objPLC.GetDevice("D" + iAddr + "." + (StageNo - 1).ToString(), out iPLCInfo);
 
             if (iPLCInfo == 1) //確認無荷有
             {
-                FunWriPLC_Bit("D" + sAddrPLC2LFC_Item, 0); //荷有
-                FunWriPLC_Bit("D" + iAddr + "0.C", 1); //load ok
-                FunWriPLC_Bit("D" + iAddr + "0.D", 0); //unload ok
-                FunWriPLC_Word("D" + sAddrPLC2LFC_CSTID, "0,0,0,0,0,0,0");
+                FunWriPLC_Bit("D" + iAddr, 0); //荷有
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".C", 1); //load ok
+                FunWriPLC_Bit("D" + iAddr + ".D", 0); //unload ok
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx);
+                FunWriPLC_Word("D" + iAddr, "0,0,0,0,0,0,0");
             }
             else
             {
-                FunWriPLC_Word("D" + iAddr2 + "1", sData[0].ToString()); //BCR Readdone
-                FunWriPLC_Word("D" + iAddr2 + "2", sData[1].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "3", sData[2].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "4", sData[3].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "5", sData[4].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "6", sData[5].ToString());
-                FunWriPLC_Word("D" + iAddr2 + "7", sData[6].ToString());
-                FunWriPLC_Bit("D" + sAddrPLC2LFC_Item, 1); //荷有
+                FunWriPLC_Bit("D" + iAddr, 1); //荷有
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (281 + 60 * PLCIdx);
+                for (int i = 0; i < 7; i++)
+                {
+                    FunWriPLC_Word("D" + iAddr , sData[i].ToString()); //BCR Readdone
+                    iAddr++;
+                }
 
                 SpinWait.SpinUntil(() => false, 200);
 
-                iAddrCSTID = iAddrCSTID + ((StageNo - 1) * 7);
-                for (int i = 0; i <= 6; i++)
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx) + ((StageNo - 1) * 7);
+                for (int i = 0; i < 7; i++)
                 {
-                    FunWriPLC_Word("D" + iAddrCSTID, sData[i].ToString());
-                    iAddrCSTID++;
+                    FunWriPLC_Word("D" + iAddr, sData[i].ToString());
+                    iAddr++;
                 }
 
-                FunWriPLC_Bit("D" + iAddr + "0.D", 1); //unload ok
-                FunWriPLC_Bit("D" + iAddr + "0.C", 0); //load
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
+                FunWriPLC_Bit("D" + iAddr + ".D", 1); //unload ok
+                FunWriPLC_Bit("D" + iAddr + ".C", 0); //load
             }
         }
 
@@ -1167,50 +1166,58 @@ namespace PLC
         public void EQPresentOnOff(int PLCIdx, int[] sData)
         {
             int iPLCInfo = 0;
+            int iAddr = 0;
 
             if (PLCIdx == 5)
             {
-                objPLC.GetDevice("D126.F", out iPLCInfo); //判斷LFT
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + 126;
+                objPLC.GetDevice("D" + iAddr + ".F", out iPLCInfo); //判斷LFT
                 if (iPLCInfo == 0)
                 {
-                    FunWriPLC_Word("D118", sData[0].ToString());
-                    FunWriPLC_Word("D119", sData[1].ToString());
-                    FunWriPLC_Word("D120", sData[2].ToString());
-                    FunWriPLC_Word("D121", sData[3].ToString());
-                    FunWriPLC_Word("D122", sData[4].ToString());
-                    FunWriPLC_Word("D123", sData[5].ToString());
-                    FunWriPLC_Word("D124", sData[6].ToString());
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + 118;
+                    for (int i = 0; i < 7; i++)
+                    {
+                        FunWriPLC_Word("D" + iAddr, sData[i].ToString());
+                        iAddr++;
+                    }
 
-                    FunWriPLC_Bit("D126.F", 1); // CST in cage
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + 126;
+                    FunWriPLC_Bit("D" + iAddr +".F", 1); // CST in cage
                 }
                 else
                 {
                     string sData2 = "0,0,0,0,0,0,0";
-                    FunWriPLC_Word("D118", sData2);
-                    FunWriPLC_Bit("D126.F", 0); // CST in cage off 
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + 118;
+                    FunWriPLC_Word("D" + iAddr, sData2);
+
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + 126;
+                    FunWriPLC_Bit("D" + iAddr + ".F", 0); // CST in cage off 
                 }
             }
             else
             {
-                objPLC.GetDevice("D" + (176 + (PLCIdx * 40)) + ".F", out iPLCInfo); //判斷TRU
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (PLCIdx * 40));
+                objPLC.GetDevice("D" + iAddr + ".F", out iPLCInfo); //判斷TRU
                 if (iPLCInfo == 0)
                 {
-                    FunWriPLC_Word("D" + (168 + (PLCIdx * 40)), sData[0].ToString());
-                    FunWriPLC_Word("D" + (169 + (PLCIdx * 40)), sData[1].ToString());
-                    FunWriPLC_Word("D" + (170 + (PLCIdx * 40)), sData[2].ToString());
-                    FunWriPLC_Word("D" + (171 + (PLCIdx * 40)), sData[3].ToString());
-                    FunWriPLC_Word("D" + (172 + (PLCIdx * 40)), sData[4].ToString());
-                    FunWriPLC_Word("D" + (173 + (PLCIdx * 40)), sData[5].ToString());
-                    FunWriPLC_Word("D" + (174 + (PLCIdx * 40)), sData[6].ToString());
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (PLCIdx * 40));
+                    for (int i = 0; i < 7; i++)
+                    {
+                        FunWriPLC_Word("D" + iAddr, sData[i].ToString());
+                        iAddr++;
+                    }
 
-                    FunWriPLC_Bit("D" + (176 + (PLCIdx * 40)) + ".F", 1); // stock on fork on
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (PLCIdx * 40));
+                    FunWriPLC_Bit("D" + iAddr + ".F", 1); // stock on fork on
                 }
                 else
                 {
                     string sData1 = "0,0,0,0,0,0,0"; //CSTID off
-                    FunWriPLC_Word("D" + (168 + (PLCIdx * 40)), sData1);
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (168 + (PLCIdx * 40));
+                    FunWriPLC_Word("D" + iAddr, sData1);
 
-                    FunWriPLC_Bit("D" + (176 + (PLCIdx * 40)) + ".F", 0); // stock on fork off
+                    iAddr = Properties.Settings.Default.MPLC_StartAddr + (176 + (PLCIdx * 40));
+                    FunWriPLC_Bit("D" + iAddr + ".F", 0); // stock on fork off
                 }
             }
         }

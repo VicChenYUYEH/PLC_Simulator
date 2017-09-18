@@ -91,7 +91,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.LFT1 = new PLC.LFT();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.chkBxTM2Word = new System.Windows.Forms.CheckBox();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbxMirle)).BeginInit();
@@ -364,7 +363,7 @@
             // btnTRU1Alarm
             // 
             this.btnTRU1Alarm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU1Alarm.Location = new System.Drawing.Point(565, 261);
+            this.btnTRU1Alarm.Location = new System.Drawing.Point(564, 261);
             this.btnTRU1Alarm.Name = "btnTRU1Alarm";
             this.btnTRU1Alarm.Size = new System.Drawing.Size(108, 29);
             this.btnTRU1Alarm.TabIndex = 183;
@@ -512,7 +511,7 @@
             // btnTRU1Reset
             // 
             this.btnTRU1Reset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU1Reset.Location = new System.Drawing.Point(750, 299);
+            this.btnTRU1Reset.Location = new System.Drawing.Point(749, 261);
             this.btnTRU1Reset.Name = "btnTRU1Reset";
             this.btnTRU1Reset.Size = new System.Drawing.Size(99, 29);
             this.btnTRU1Reset.TabIndex = 129;
@@ -523,7 +522,7 @@
             // btnTRU2Reset
             // 
             this.btnTRU2Reset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU2Reset.Location = new System.Drawing.Point(749, 261);
+            this.btnTRU2Reset.Location = new System.Drawing.Point(749, 299);
             this.btnTRU2Reset.Name = "btnTRU2Reset";
             this.btnTRU2Reset.Size = new System.Drawing.Size(99, 29);
             this.btnTRU2Reset.TabIndex = 128;
@@ -811,23 +810,11 @@
             this.tabControl1.Size = new System.Drawing.Size(880, 435);
             this.tabControl1.TabIndex = 3;
             // 
-            // chkBxTM2Word
-            // 
-            this.chkBxTM2Word.AutoSize = true;
-            this.chkBxTM2Word.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkBxTM2Word.Location = new System.Drawing.Point(549, 18);
-            this.chkBxTM2Word.Name = "chkBxTM2Word";
-            this.chkBxTM2Word.Size = new System.Drawing.Size(164, 23);
-            this.chkBxTM2Word.TabIndex = 180;
-            this.chkBxTM2Word.Text = "TM 2Word(Fork type)";
-            this.chkBxTM2Word.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 498);
-            this.Controls.Add(this.chkBxTM2Word);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblConn_PLC_Name);
@@ -854,7 +841,6 @@
             this.tbpLFT.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -898,7 +884,6 @@
         private System.Windows.Forms.Button btnTRU1Reset;
         private System.Windows.Forms.Button btnTRU2Reset;
         private System.Windows.Forms.Button btnLFTReset;
-        private System.Windows.Forms.CheckBox chkBxTM2Word;
         private System.Windows.Forms.ComboBox cboPortSelect;
         private System.Windows.Forms.Label lblCSTID;
         private System.Windows.Forms.Label lblPortSelect;

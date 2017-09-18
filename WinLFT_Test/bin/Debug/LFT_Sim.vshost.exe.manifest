@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Lifter.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="LFT_Sim" version="2.3.1706.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="LFT_Sim" version="2.4.1709.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="LFT_Sim.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -73,13 +73,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsLifterMPLC.dll" size="65536">
-      <assemblyIdentity name="clsLifterMPLC" version="6.1.1706.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="clsLifterMPLC" version="6.0.1706.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q82FL+srpB5T4uRrR2PGJUg92MVazbhe72cJ+BKTqf4=</dsig:DigestValue>
+        <dsig:DigestValue>WWdKisTMnwMun8to/kaaE7y+Zovfk54i4ssQiyd93u8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -120,26 +120,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="80896">
-      <assemblyIdentity name="LFT_Sim" version="2.3.1706.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="83968">
+      <assemblyIdentity name="LFT_Sim" version="2.4.1709.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>j2zo6qkxsh7TpakoGuWAQWASCLFqsb+cGcX4hKAJsNo=</dsig:DigestValue>
+        <dsig:DigestValue>mVCkV/AmWPRpwcw/QvqXOErA8MDhK2oBsqrGCfntDpw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PLC.dll" size="139776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PLC.dll" size="142336">
       <assemblyIdentity name="PLC" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fpf63zRNRkS30WTcsSByiCq6+FfDelPCzTA9byYHgdc=</dsig:DigestValue>
+        <dsig:DigestValue>wmBdswCcGdmD5ow8PZTC0ylI3WyugdSu4Am5N8kTmZw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -155,13 +155,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="LFT_Sim.exe.config" size="167">
+  <file name="LFT_Sim.exe.config" size="212">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>c5A1E0VFdjRrCoH30IyWh/L/VhgQ3hO9i/F+MAROEiY=</dsig:DigestValue>
+      <dsig:DigestValue>1VRElboPtrTgTDlkBy3l3YwpRO5GB7zE41qY2wfFr8M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Lifter.ico" size="4286">

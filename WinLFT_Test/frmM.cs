@@ -1,4 +1,7 @@
 ﻿#region V1.0.0.0_New Version
+/// V2.4.1709.0    20170918    VicChen 
+///      V2.4.1709.0-1  Add        ->   將寫入位址偏移值，及第一、二樓層初始以Setting方式設定，可整合Lifter及TRU Simulator
+///      
 /// V2.3.1706.0    20170626    VicChen 
 ///      V2.3.1706.0-1  Add        ->   將Roller Type的各個Stage On/OFF移至Fork Type版
 ///      
@@ -87,26 +90,24 @@ namespace WinLFT_Test
 
         private void CONV_PortModeChangeTO(int CONVIdx, clsLifterMPLC.MPLC.enuPortMode PortMode)
         {
-            int iAddrPLC2LFC = 24 + 6 * CONVIdx ;
-            string sAddrLFC2PLC = "D7" + CONVIdx * 2;
             switch (PortMode)
             {
                 //Request InMode
                 case clsLifterMPLC.MPLC.enuPortMode.InMode:
                     
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.3", 1);  // input mode
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.4", 0);  // output mode
-                    LFC.FunWriPLC_Bit(sAddrLFC2PLC + ".E", 0);  // input mode
-                    LFC.FunWriPLC_Bit(sAddrLFC2PLC + ".F", 0);  // output mode                 
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.6", 0);  // Input request 
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".3", 1);  // input mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".4", 0);  // output mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortCmd[CONVIdx] + ".E", 0);  // input mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortCmd[CONVIdx] + ".F", 0);  // output mode                 
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".6", 0);  // Input request 
                     break;
                 //Request OutMode
                 case clsLifterMPLC.MPLC.enuPortMode.OutMode:
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.3", 0);  // input mode
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.4", 1);  // output mode
-                    LFC.FunWriPLC_Bit(sAddrLFC2PLC + ".E", 0);  // input mode
-                    LFC.FunWriPLC_Bit(sAddrLFC2PLC + ".F", 0);  // output mode           
-                    LFC.FunWriPLC_Bit("D" + iAddrPLC2LFC + "0.7", 0);  // output request 
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".3", 0);  // input mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".4", 1);  // output mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortCmd[CONVIdx] + ".E", 0);  // input mode
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortCmd[CONVIdx] + ".F", 0);  // output mode           
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[CONVIdx] + ".7", 0);  // output request 
                     break;
             }
         }
@@ -241,32 +242,32 @@ namespace WinLFT_Test
                         }
                     case 2:     //LFT取物流程
                         {
-                            LFTstep = LFC.LFT_SelectFrom(chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_SelectFrom();
                             break;
                         }
                     case 7:     //TRU 1 pick up 交握流程
                         {
-                            LFTstep = LFC.LFT_Pick_up_TRU(PLC.MPLC.TRU.L10, chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_Pick_up_TRU(PLC.MPLC.TRU.L10);
                             break;
                         }
                     case 8:     //TRU 2 pick up 交握流程
                         {
-                            LFTstep = LFC.LFT_Pick_up_TRU(PLC.MPLC.TRU.L30, chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_Pick_up_TRU(PLC.MPLC.TRU.L30);
                             break;
                         }
                     case 10:    //LFT 置物
                         {
-                            LFTstep = LFC.LFT_SelectTo(chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_SelectTo();
                             break;
                         }
                     case 15:    //LFT Deposite TRU1
                         {
-                            LFTstep = LFC.LFT_Deposite_TRU(PLC.MPLC.TRU.L10, chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_Deposite_TRU(PLC.MPLC.TRU.L10);
                             break;
                         }
                     case 16:    //LFT Deposite TRU2
                         {
-                            LFTstep = LFC.LFT_Deposite_TRU(PLC.MPLC.TRU.L30, chkBxTM2Word.Checked);
+                            LFTstep = LFC.LFT_Deposite_TRU(PLC.MPLC.TRU.L30);
                             break;
                         }
                     case 18:    //transfer command T3 move 
@@ -287,9 +288,9 @@ namespace WinLFT_Test
                             string sData = "";
                             string sAddr = "";
 
-                            sAddr = "D125.9";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".9";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete
-                            sAddr = "D125.1";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
 
                             if (clsLifterMPLC.MPLC.LFC_C.L2LFC.ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2L.PCErrorIdx)
@@ -300,14 +301,14 @@ namespace WinLFT_Test
                                 string temp = LFTalarmcode.ToString();
 
                                 sData = temp;
-                                sAddr = "D128"; //LFT  error code
+                                sAddr = "D" + LFC.iAddrLFT_ErrorCode; //LFT  error code
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                                 sData = LFTErrorIndex.ToString();
-                                sAddr = "D129"; //LFT  error index
+                                sAddr = "D" + LFC.iAddrLFT_ErrorIdx; //LFT  error index
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                                sAddr = "D126.3";
+                                sAddr = "D" + LFC.iAddrLFT_Sts2 + ".3";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT interlock error on
 
                                 LFTstep = 100;
@@ -320,7 +321,7 @@ namespace WinLFT_Test
                             if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCCmd.InterlockError == clsLifterMPLC.MPLC.enuSignal.ON)
                             {
                                 string sAddr = "";
-                                sAddr = "D126.3";
+                                sAddr = "D" + LFC.iAddrLFT_Sts2 + ".3";
                                 bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT interlock error off
 
                                 LFTstep = 101;
@@ -335,31 +336,31 @@ namespace WinLFT_Test
                             {
                                 string sData = "";
                                 string sAddr = "";
-                                sAddr = "D125.2";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".2";
                                 bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
 
                                 sData = "0,0,0,0,0,0,0,0,0,0,0";
-                                sAddr = "D10";
+                                sAddr = "D" + LFC.iAddrLFT_ClearCmd;
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                                sAddr = "D125.A";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".A";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on
 
 
-                                sAddr = "D125.1";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".1";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
 
-                                sAddr = "D128";
+                                sAddr = "D" + LFC.iAddrLFT_ErrorCode;
                                 bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
                                 LFTErrorIndex++;
                                 sData = LFTErrorIndex.ToString();
-                                sAddr = "D129"; //LFT  error index
+                                sAddr = "D" + LFC.iAddrLFT_ErrorIdx; //LFT  error index
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                                 SpinWait.SpinUntil(() => false, 500);
 
-                                sAddr = "D125.A";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".A";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // abnormal complete 0ff
                                 LFTstep = 0;
                             }
@@ -373,15 +374,15 @@ namespace WinLFT_Test
                             string sData = "";
                             string sAddr = "";
 
-                            sAddr = "D125.9";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".9";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete
-                            sAddr = "D125.1";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
-                            sAddr = "D125.2";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".2";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
-                            sAddr = "D135.0";
+                            sAddr = "D" + LFC.iAddrLFT_IFSts + ".0";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // LDRQ off                                
-                            sAddr = "D135.1";
+                            sAddr = "D" + LFC.iAddrLFT_IFSts + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // UDRQ off
 
                             if (clsLifterMPLC.MPLC.LFC_C.L2LFC.ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2L.PCErrorIdx)
@@ -392,28 +393,28 @@ namespace WinLFT_Test
                                 string temp = LFTalarmcode.ToString();
 
                                 sData = temp;
-                                sAddr = "D128"; //LFT  error code
+                                sAddr = "D" + LFC.iAddrLFT_ErrorCode; //LFT  error code
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                                 sData = LFTErrorIndex.ToString();
-                                sAddr = "D129"; //LFT  error index
+                                sAddr = "D" + LFC.iAddrLFT_ErrorIdx; //LFT  error index
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                                sAddr = "D125.4";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".4";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT error on
                                 LFTstep = 200;
                                 SpinWait.SpinUntil(() => false, 500);
                             }
 
                             sData = "0,0,0,0,0,0,0,0,0,0,0";
-                            sAddr = "D10";
+                            sAddr = "D" + LFC.iAddrLFT_ClearCmd;
                             bRet = LFC.FunWriPLC_Word(sAddr, sData); //命令清空                               
                             break;
                         }
                     case 200:
                         {
                             string sAddr = "";
-                            sAddr = "D125.A";
+                            sAddr = "D" + LFC.iAddrLFT_Sts1 + ".A";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on                               
                             LFTstep = 201;
                             SpinWait.SpinUntil(() => false, 500);
@@ -425,19 +426,19 @@ namespace WinLFT_Test
 
                             if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCCmd.AlarmReset == clsLifterMPLC.MPLC.enuSignal.ON)
                             {
-                                sAddr = "D125.4";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".4";
                                 bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT error off
 
-                                sAddr = "D125.1";
+                                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".1";
                                 bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
 
-                                sAddr = "D128";
+                                sAddr = "D" + LFC.iAddrLFT_ErrorCode;
                                 bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
-                                LFC.FunWriPLC_Bit("D25.1", 0);
+                                LFC.FunWriPLC_Bit("D" + LFC.iAddrLFT_Reset + ".1", 0);
 
                                 LFTErrorIndex++;
                                 string sData = LFTErrorIndex.ToString();
-                                sAddr = "D129"; //LFT  error index
+                                sAddr = "D" + LFC.iAddrLFT_ErrorIdx; //LFT  error index
                                 bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                                 LFTstep = 0;
@@ -525,7 +526,7 @@ namespace WinLFT_Test
                         string sData = "";
                         string sAddr = "";
 
-                        sAddr = "D175.9";
+                        sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".9";
                         LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
                         if (clsLifterMPLC.MPLC.LFC_C.T2LFC[0].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2T[0].PCErrorIdx)
                         {
@@ -536,17 +537,17 @@ namespace WinLFT_Test
 
 
                             sData = temp;
-                            sAddr = "D177"; //TRU  error code
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorCode; //TRU  error code
                             bool bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                             sData = TRU1ErrorIndex.ToString();
-                            sAddr = "D178"; //TRU  error index
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorIdx; //TRU  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D175.1";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
 
-                            sAddr = "D176.3";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts2 + ".3";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT interlock error on
                             TRU1step = 100;
                             SpinWait.SpinUntil(() => false, 500);
@@ -559,7 +560,7 @@ namespace WinLFT_Test
                         {
 
                             string sAddr = "";
-                            sAddr = "D176.3";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts2 + ".3";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT interlock error off
 
                             TRU1step = 101;
@@ -572,30 +573,30 @@ namespace WinLFT_Test
                         {
                             string sData = "";
                             string sAddr = "";
-                            sAddr = "D175.2";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".2";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
 
                             sData = "0,0,0,0,0,0,0,0,0,0,0";
-                            sAddr = "D30";
+                            sAddr = "D" + LFC.iAddrLFT_ClearCmd;
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D175.A";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".A";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on
 
 
-                            sAddr = "D175.1";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
 
-                            sAddr = "D177";
+                            sAddr = "D" + LFC.iAddrLFT_ErrorCode;
                             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
                             TRU1ErrorIndex++;
                             sData = TRU1ErrorIndex.ToString();
-                            sAddr = "D178"; //TRU  error index
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorIdx; //TRU  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
                             SpinWait.SpinUntil(() => false, 1000);
 
-                            sAddr = "D175.A";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".A";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // abnormal complete off
                             TRU1step = 0;
                         }
@@ -609,19 +610,19 @@ namespace WinLFT_Test
                         string sData = "";
                         string sAddr = "";
 
-                        sAddr = "D175.1";
+                        sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".1";
                         bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
 
-                        sAddr = "D175.2";
+                        sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".2";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
 
-                        sAddr = "D187.0";
+                        sAddr = "D" + LFC.iAddrTRU1_IFSts + ".0";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0); // LDRQ off
 
-                        sAddr = "D187.1";
+                        sAddr = "D" + LFC.iAddrTRU1_IFSts + ".1";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0); // UDRQ off
 
-                        sAddr = "D175.9";
+                        sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".9";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
 
                         if (clsLifterMPLC.MPLC.LFC_C.T2LFC[0].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2T[0].PCErrorIdx)
@@ -633,20 +634,20 @@ namespace WinLFT_Test
 
 
                             sData = temp;
-                            sAddr = "D177"; //LFT  error code
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorCode; //LFT  error code
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                             sData = TRU1ErrorIndex.ToString();
-                            sAddr = "D178"; //LFT  error index
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorIdx; //LFT  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D175.4";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".4";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT error on
                             TRU1step = 200;
                             SpinWait.SpinUntil(() => false, 500);
                         }
                         sData = "0,0,0,0,0,0,0,0,0,0,0";
-                        sAddr = "D30";
+                        sAddr = "D" + LFC.iAddrTRU1_ClearCmd;
                         bRet = LFC.FunWriPLC_Word(sAddr, sData); //命令清空
 
                         break;
@@ -655,7 +656,7 @@ namespace WinLFT_Test
                     {
                         string sAddr = "";
 
-                        sAddr = "D175.A";
+                        sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".A";
                         bool bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on
 
                         TRU1step = 201;
@@ -670,20 +671,20 @@ namespace WinLFT_Test
 
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[0].TRUCCmd.AlarmReset == clsLifterMPLC.MPLC.enuSignal.ON)
                         {
-                            sAddr = "D175.4";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".4";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT error off
 
-                            sAddr = "D175.1";
+                            sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
-                            sAddr = "D177";
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorCode;
                             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
                             TRU1ErrorIndex++;
                             string sData = TRU1ErrorIndex.ToString();
-                            sAddr = "D178"; //TRU  error index
+                            sAddr = "D" + LFC.iAddrTRU1_ErrorIdx; //TRU  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            LFC.FunWriPLC_Bit("D45.1", 0);
+                            LFC.FunWriPLC_Bit("D" + LFC.iAddrTRU1_Reset + ".1", 0);
                             TRU1step = 0;
                         }
 
@@ -777,7 +778,7 @@ namespace WinLFT_Test
                         string sData = "";
                         string sAddr = "";
 
-                        sAddr = "D215.9";
+                        sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".9";
                         LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
                         if (clsLifterMPLC.MPLC.LFC_C.T2LFC[1].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2T[1].PCErrorIdx)
                         {
@@ -787,18 +788,18 @@ namespace WinLFT_Test
                             string temp = TRU2alarmcode.ToString();
 
                             sData = temp;
-                            sAddr = "D217"; //LFT  error code
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorCode; //LFT  error code
                             bool bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                             sData = TRU2ErrorIndex.ToString();
-                            sAddr = "D218"; //LFT  error index
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorIdx; //LFT  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D215.1";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
 
 
-                            sAddr = "D216.3";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts2 + ".3";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT interlock error on
 
                             TRU2step = 100;
@@ -811,7 +812,7 @@ namespace WinLFT_Test
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[1].TRUCCmd.InterlockAck == clsLifterMPLC.MPLC.enuSignal.ON)
                         {
                             string sAddr = "";
-                            sAddr = "D216.3";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts2 + ".3";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT interlock error off
 
                             TRU2step = 101;
@@ -826,31 +827,31 @@ namespace WinLFT_Test
                         {
                             string sData = "";
                             string sAddr = "";
-                            sAddr = "D215.2";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".2";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
 
                             sData = "0,0,0,0,0,0,0,0,0,0,0";
-                            sAddr = "D50";
+                            sAddr = "D" + LFC.iAddrTRU2_ClearCmd;
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D215.A";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".A";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on
 
 
-                            sAddr = "D215.1";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
 
-                            sAddr = "D217";
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorCode;
                             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
                             TRU2ErrorIndex++;
                             sData = TRU2ErrorIndex.ToString();
-                            sAddr = "D218"; //TRU  error index
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorIdx; //TRU  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                             SpinWait.SpinUntil(() => false, 1000);
 
-                            sAddr = "D215.A";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".A";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // abnormal complete off
                             TRU2step = 0;
                         }
@@ -865,19 +866,19 @@ namespace WinLFT_Test
                         string sAddr = "";
 
 
-                        sAddr = "D215.1";
+                        sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".1";
                         bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
-                        sAddr = "D215.2";
+                        sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".2";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // busy off
 
 
-                        sAddr = "D227.0";
+                        sAddr = "D" + LFC.iAddrTRU2_IFSts + ".0";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0); // LDRQ off
 
-                        sAddr = "D227.1";
+                        sAddr = "D" + LFC.iAddrTRU2_IFSts + ".1";
                         bRet = LFC.FunWriPLC_Bit(sAddr, 0); // UDRQ off
 
-                        sAddr = "D215.9";
+                        sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".9";
                         LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
                         if (clsLifterMPLC.MPLC.LFC_C.T2LFC[1].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2T[1].PCErrorIdx)
                         {
@@ -887,14 +888,14 @@ namespace WinLFT_Test
                             string temp = TRU2alarmcode.ToString();
 
                             sData = temp;
-                            sAddr = "D217"; //LFT  error code
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorCode; //LFT  error code
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
                             sData = TRU2ErrorIndex.ToString();
-                            sAddr = "D218"; //LFT  error index
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorIdx; //LFT  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            sAddr = "D215.4";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".4";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); //LFT error on
 
                             TRU2step = 200;
@@ -902,7 +903,7 @@ namespace WinLFT_Test
                         }
 
                         sData = "0,0,0,0,0,0,0,0,0,0,0";
-                        sAddr = "D50";
+                        sAddr = "D" + LFC.iAddrTRU2_ClearCmd;
                         bRet = LFC.FunWriPLC_Word(sAddr, sData); //命令清空
                         break;
                     }
@@ -910,7 +911,7 @@ namespace WinLFT_Test
                 case 200:
                     {
                         string sAddr = "";
-                        sAddr = "D215.A";
+                        sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".A";
                         bool bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // abnormal complete on
                         TRU2step = 201;
                         SpinWait.SpinUntil(() => false, 1000);
@@ -923,21 +924,21 @@ namespace WinLFT_Test
 
                         if (clsLifterMPLC.MPLC.LFC_C.LFC2T[1].TRUCCmd.AlarmReset == clsLifterMPLC.MPLC.enuSignal.ON)
                         {
-                            sAddr = "D215.4";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".4";
                             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT error off
 
-                            sAddr = "D215.1";
+                            sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".1";
                             bRet = LFC.FunWriPLC_Bit(sAddr, 1); // ready on
 
-                            sAddr = "D217";
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorCode;
                             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
                             TRU2ErrorIndex++;
                             string sData = TRU2ErrorIndex.ToString();
-                            sAddr = "D218"; //TRU  error index
+                            sAddr = "D" + LFC.iAddrTRU2_ErrorIdx; //TRU  error index
                             bRet = LFC.FunWriPLC_Word(sAddr, sData);
 
-                            LFC.FunWriPLC_Bit("D65.1", 0);
+                            LFC.FunWriPLC_Bit("D" + LFC.iAddrTRU2_Reset + "1", 0);
                             TRU2step = 0;
                         }
                         break;
@@ -1092,14 +1093,14 @@ namespace WinLFT_Test
             {
                 if (iTRU == PLC.MPLC.TRU.L10)
                 {
-                    LFC.FunWriPLC_Word("D187", 0); //Clear handshake data
-                    if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0 && clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc == 2 )
+                    LFC.FunWriPLC_Word("D" + LFC.iAddrTRU1_IFSts, 0); //Clear handshake data
+                    if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0 && clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc == LFC.iFirstFloor )
                     LFTstep = 99;
                 }
                 else if (iTRU == PLC.MPLC.TRU.L30)
                 {
-                    LFC.FunWriPLC_Word("D227", 0);
-                    if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0 && clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc == 3)
+                    LFC.FunWriPLC_Word("D" + LFC.iAddrTRU2_IFSts, 0);
+                    if (clsLifterMPLC.MPLC.LFC_C.LFC2L.LFCmdMode != 0 && clsLifterMPLC.MPLC.LFC_C.L2LFC.CurrentLV.CurrentLoc == LFC.iSecondFloor)
                     LFTstep = 99;
                 }
             }
@@ -1121,7 +1122,7 @@ namespace WinLFT_Test
 
                 if (i == 0)
                 {
-                    sAddr = "D175.9";
+                    sAddr = "D" + LFC.iAddrTRU1_Sts1 + ".9";
                     bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
 
                     SpinWait.SpinUntil(() => false, 700);
@@ -1130,20 +1131,20 @@ namespace WinLFT_Test
 
                 if (i == 1)
                 {
-                    sAddr = "D215.9";
+                    sAddr = "D" + LFC.iAddrTRU2_Sts1 + ".9";
                     bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
 
                     SpinWait.SpinUntil(() => false, 700);
                     TRU2step = 1;
                 }
 
-                sAddr = (i == 0 ? "D175.1" : "D215.1");
+                sAddr = (i == 0 ? "D" + LFC.iAddrTRU1_Sts1 + ".1" : "D" + LFC.iAddrTRU2_Sts1 + ".1");
                 bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
-                sAddr = (i == 0 ? "D175.2" : "D215.2");
+                sAddr = (i == 0 ? "D" + LFC.iAddrTRU1_Sts1 + ".2" : "D" + LFC.iAddrTRU2_Sts1 + ".2");
                 bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // busy on
 
                 sData = clsLifterMPLC.MPLC.LFC_C.LFC2T[i].SeqNo.ToString();
-                sAddr = (i == 0 ? "D160" : "D200");
+                sAddr = (i == 0 ? "D" + LFC.iAddrTRU1_SeqNo : "D" + LFC.iAddrTRU2_SeqNo);
                 bRet = LFC.FunWriPLC_Word(sAddr, sData); //SeqNo
 
                 string[] sArrayData = new string[4];
@@ -1152,7 +1153,7 @@ namespace WinLFT_Test
                 sArrayData[2] = clsLifterMPLC.MPLC.LFC_C.LFC2T[i].RotateSpeed.ToString();
                 sArrayData[3] = clsLifterMPLC.MPLC.LFC_C.LFC2T[i].ForkSpeed.ToString();
 
-                sAddr = (i == 0 ? "D164" : "D204");
+                sAddr = (i == 0 ? "D" + LFC.iAddrTRU1_Speed : "D" + LFC.iAddrTRU2_Speed);
                 bRet = LFC.FunWriPLC_Word(sAddr, sArrayData[0] + "," + sArrayData[1] + "," + sArrayData[2] + "," + sArrayData[3]); //Speed
             }
         }
@@ -1167,19 +1168,19 @@ namespace WinLFT_Test
                 string sData = "";
                 string sAddr = "";
 
-                sAddr = "D125.9";
+                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".9";
                 bool bRet = LFC.FunWriPLC_Bit(sAddr, 0);  // Normal complete off
 
-                sAddr = "D125.1";
+                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".1";
                 bRet = LFC.FunWriPLC_Bit(sAddr, 0); // ready off
-                sAddr = "D125.2";
+                sAddr = "D" + LFC.iAddrLFT_Sts1 + ".2";
                 bRet = LFC.FunWriPLC_Bit(sAddr, 1);  // busy on
 
                 sData = clsLifterMPLC.MPLC.LFC_C.LFC2L.SeqNo.ToString();
-                sAddr = "D110";
+                sAddr = "D" + LFC.iAddrLFT_SeqNo;
                 bRet = LFC.FunWriPLC_Word(sAddr, sData); //SeqNo
 
-                sAddr = "D114";
+                sAddr = "D" + LFC.iAddrLFT_Speed;
                 sData = clsLifterMPLC.MPLC.LFC_C.LFC2L.Speed.ToString();
                 bRet = LFC.FunWriPLC_Word(sAddr, sData); //Lifter Speed
 
@@ -1191,75 +1192,71 @@ namespace WinLFT_Test
         private void Init_LFT()
         {
             string sData = "0,0,0,0,0,0,0,515,4096,0"; //等補
-            bool bRet = LFC.FunWriPLC_Word("D118", sData);
+            bool bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrLFT_Init, sData);
             sData = "0,0,0,0,0";  //T1~T4
-            bRet = LFC.FunWriPLC_Word("D134", sData);
+            bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrLFT_ClearSts, sData);
 
             string sData1 = "0,0,0,0,0,0,0,0,0,0,0";
-            bool bRet1 = LFC.FunWriPLC_Word("D10", sData1);
+            bool bRet1 = LFC.FunWriPLC_Word("D" + LFC.iAddrLFT_ClearCmd, sData1);
             LFTstep = 0;
         }
 
         private void Init_TRU1()
         {
             string sData = "0,0,0,0,0,0,0,515,1792";
-            bool bRet = LFC.FunWriPLC_Word("D168", sData);
+            bool bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU1_Init, sData);
             sData = "0,0,0,0,0";  //T1~T4, IF Status
-            bRet = LFC.FunWriPLC_Word("D183", sData);
+            bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU1_ClearSts, sData);
 
             string sData1 = "0,0,0,0,0,0,0,0,0,0,0";
-            bool bRet1 = LFC.FunWriPLC_Word("D30", sData1);
+            bool bRet1 = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU1_ClearCmd, sData1);
             TRU1step = 0;
         }
 
         private void Init_TRU2()
         {
             string sData = "0,0,0,0,0,0,0,515,1792";
-            bool bRet = LFC.FunWriPLC_Word("D208", sData);
+            bool bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU2_Init, sData);
             sData = "0,0,0,0,0";  //T1~T4, IF Status
-            bRet = LFC.FunWriPLC_Word("D223", sData);
+            bRet = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU2_ClearSts, sData);
 
             string sData1 = "0,0,0,0,0,0,0,0,0,0,0";
-            bool bRet1 = LFC.FunWriPLC_Word("D50", sData1);
+            bool bRet1 = LFC.FunWriPLC_Word("D" + LFC.iAddrTRU2_ClearCmd, sData1);
             TRU1step = 0;
         }
 
         private void InitCONV()
         {
-            string[] strAddr = new string[] { "D240", "D300", "D360", "D420" };
-            string[] strAddr1 = new string[] { "D241", "D301", "D361", "D421" };
-            string[] strAddr2 = new string[] { "D246", "D306", "D366", "D426" };
-            string[] strAddr3 = new string[] { "D70", "D72", "D74", "D76"};
             for (int i = 0; i < 4; i++)
             {
-                LFC.FunWriPLC_Bit(strAddr[i] + ".0", 1);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".0", 1);
                 if (i % 2 == 0)
                 {
-                    LFC.FunWriPLC_Bit(strAddr[i] + ".3", 1);
-                    LFC.FunWriPLC_Bit(strAddr[i] + ".4", 0);
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".3", 1);
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".4", 0);
 
                 }
                 else
                 {
-                    LFC.FunWriPLC_Bit(strAddr[i] + ".4", 1);
-                    LFC.FunWriPLC_Bit(strAddr[i] + ".3", 0);
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".4", 1);
+                    LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".3", 0);
                 }
-                LFC.FunWriPLC_Bit(strAddr[i] + ".5", 1);
-                LFC.FunWriPLC_Bit(strAddr[i] + ".B", 1);
-                LFC.FunWriPLC_Bit(strAddr[i] + ".C", 1);
-                LFC.FunWriPLC_Bit(strAddr[i] + ".D", 0);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".5", 1);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".B", 1);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".C", 1);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".D", 0);
             }
             for (int i = 0; i < 4; i++)
             {
-                LFC.FunWriPLC_Bit(strAddr1[i] + ".0", 0);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts2[i] + ".0", 0);
             }
             for (int i = 0; i < 4; i++)
             {
-                LFC.FunWriPLC_Word(strAddr2[i], "0,0,0,0,0,0,0");
+                LFC.FunWriPLC_Word("D" + LFC.iAddrPortClearSts[i], "0,0,0,0,0,0,0");
             }
             for (int i = 0; i < 4; i++)
             {
-                LFC.FunWriPLC_Word(strAddr3[i], "0,0");
+                LFC.FunWriPLC_Word("D" + LFC.iAddrPortCmd[i], "0,0");
             }
         }
 
@@ -1329,17 +1326,17 @@ namespace WinLFT_Test
 
         private void btnLFTReset_Click(object sender, EventArgs e)
         {
-            LFC.FunWriPLC_Bit("D25.1", 1);
+            LFC.FunWriPLC_Bit("D" + LFC.iAddrLFT_Reset + ".1", 1);
         }
 
         private void btnTRU1Reset_Click(object sender, EventArgs e)
         {
-            LFC.FunWriPLC_Bit("D45.1", 1);
+            LFC.FunWriPLC_Bit("D" + LFC.iAddrTRU1_Reset + ".1", 1);
         }
 
         private void btnTRU2Reset_Click(object sender, EventArgs e)
         {
-            LFC.FunWriPLC_Bit("D65.1", 1);
+            LFC.FunWriPLC_Bit("D" + LFC.iAddrTRU2_Reset + ".1", 1);
         }
 
         private void btnLFTAlarm_Click(object sender, EventArgs e)
@@ -1382,30 +1379,29 @@ namespace WinLFT_Test
                 string temp = PortAlarmcode.ToString();
 
                 string sData = temp;
-                string sAddr = "D244"; //Port  error code
+                string sAddr = "D" + LFC.iAddrPortErrorCode; //Port  error code
                 LFC.FunWriPLC_Word(sAddr, sData);
 
                 sData = PortErrorIndex.ToString();
-                sAddr = "D291"; //Port  error index
+                sAddr = "D" + LFC.iAddrPortErrorIndex; //Port  error index
                 LFC.FunWriPLC_Word(sAddr, sData);
 
-                sAddr = "D240.2";
+                sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
                 LFC.FunWriPLC_Bit(sAddr, 1); //Port error on
             }
         }
 
         private void btnResetPort_Click(object sender, EventArgs e)
         {
-            string sAddr = "D240.2";
-            bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //LFT error off
+            string sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
+            bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //Port error off
 
-            sAddr = "D244";
+            sAddr = "D" + LFC.iAddrPortErrorCode;
             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
-            LFC.FunWriPLC_Bit("D25.1", 0);
 
             PortErrorIndex++;
             string sData = PortErrorIndex.ToString();
-            sAddr = "D291"; //LFT  error index
+            sAddr = "D" + LFC.iAddrPortErrorIndex; //Port  error index
             bRet = LFC.FunWriPLC_Word(sAddr, sData);
         }
 
@@ -1456,7 +1452,6 @@ namespace WinLFT_Test
             {
                 cboStageSelect.Items.Add(i);
             }
-
         }
 
         #endregion
