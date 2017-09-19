@@ -25,7 +25,7 @@ namespace PLC.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2000")]
         public int MPLC_StartAddr {
             get {
                 return ((int)(this["MPLC_StartAddr"]));
@@ -34,7 +34,7 @@ namespace PLC.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int First_Floor {
             get {
                 return ((int)(this["First_Floor"]));
@@ -43,7 +43,7 @@ namespace PLC.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public int Second_Floor {
             get {
                 return ((int)(this["Second_Floor"]));

@@ -73,13 +73,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsLifterMPLC.dll" size="65536">
-      <assemblyIdentity name="clsLifterMPLC" version="6.0.1706.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="clsLifterMPLC" version="7.1.1709.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WWdKisTMnwMun8to/kaaE7y+Zovfk54i4ssQiyd93u8=</dsig:DigestValue>
+        <dsig:DigestValue>97L6HL21EhgOSZBkK741RSw5Y+n2CmzP77Po5X8ldps=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -127,7 +127,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mVCkV/AmWPRpwcw/QvqXOErA8MDhK2oBsqrGCfntDpw=</dsig:DigestValue>
+        <dsig:DigestValue>okRvTr3Kenx1+7ybSTfOOrywxjuJA6b5nx92fPghrFQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,7 +139,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wmBdswCcGdmD5ow8PZTC0ylI3WyugdSu4Am5N8kTmZw=</dsig:DigestValue>
+        <dsig:DigestValue>SgNgT800TpHz5KEp98X11VO3mUrLVco9M0QyaXIXw2k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

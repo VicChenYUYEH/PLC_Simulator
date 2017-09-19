@@ -198,11 +198,9 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & 
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
-C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
-C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
-C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.config
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe.manifest
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.application
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\bin\Debug\LFT_Sim.exe
@@ -223,3 +221,5 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Co
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.TrustInfo.xml
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe.manifest
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.application
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.exe
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\WinLFT_Test\obj\Debug\LFT_Sim.pdb

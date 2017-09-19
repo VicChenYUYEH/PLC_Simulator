@@ -266,6 +266,7 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & 
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\Oracel 華佳采 Fork Type Lifter & PnP\Lifter\SourceCode\WinLFT_Test\PLC\obj\Debug\PLC.pdb
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.dll.config
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.pdb
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\clsDB_C.dll
@@ -276,6 +277,7 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Co
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\ComSubFun.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\SubFun.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\System.Data.SQLite.dll
+C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\Interop.ACTETHERLib.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\Interop.ACTMULTILib.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.ResolveComReference.cache
@@ -285,5 +287,3 @@ C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Co
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.GenerateResource.Cache
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.dll
 C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.pdb
-C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\bin\Debug\PLC.dll.config
-C:\Users\Vic\Desktop\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache
