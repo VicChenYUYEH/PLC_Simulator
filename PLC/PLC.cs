@@ -1126,16 +1126,16 @@ namespace PLC
 
             if (iPLCInfo == 1) //確認無荷有
             {
-                FunWriPLC_Bit("D" + iAddr, 0); //荷有
+                FunWriPLC_Bit("D" + iAddr + "." + (StageNo - 1).ToString(), 0); //荷有
                 iAddr = Properties.Settings.Default.MPLC_StartAddr + (240 + 60 * PLCIdx);
                 FunWriPLC_Bit("D" + iAddr + ".C", 1); //load ok
                 FunWriPLC_Bit("D" + iAddr + ".D", 0); //unload ok
-                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx);
+                iAddr = Properties.Settings.Default.MPLC_StartAddr + (246 + 60 * PLCIdx) + ((StageNo - 1) * 7);
                 FunWriPLC_Word("D" + iAddr, "0,0,0,0,0,0,0");
             }
             else
             {
-                FunWriPLC_Bit("D" + iAddr, 1); //荷有
+                FunWriPLC_Bit("D" + iAddr + "." + (StageNo - 1).ToString(), 1); //荷有
                 iAddr = Properties.Settings.Default.MPLC_StartAddr + (281 + 60 * PLCIdx);
                 for (int i = 0; i < 7; i++)
                 {

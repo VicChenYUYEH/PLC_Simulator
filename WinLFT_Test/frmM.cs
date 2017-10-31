@@ -1386,8 +1386,8 @@ namespace WinLFT_Test
                 sAddr = "D" + LFC.iAddrPortErrorIndex; //Port  error index
                 LFC.FunWriPLC_Word(sAddr, sData);
 
-                sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
-                LFC.FunWriPLC_Bit(sAddr, 1); //Port error on
+                //sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
+                //LFC.FunWriPLC_Bit(sAddr, 1); //Port error on
             }
         }
 
