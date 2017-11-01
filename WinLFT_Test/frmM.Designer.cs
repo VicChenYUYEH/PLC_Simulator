@@ -40,6 +40,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.picbxMirle = new System.Windows.Forms.PictureBox();
             this.tbpProcList = new System.Windows.Forms.TabPage();
+            this.lblAlarmCode = new System.Windows.Forms.Label();
+            this.lblAlarmPortSelect = new System.Windows.Forms.Label();
+            this.cboAlarmPortSelect = new System.Windows.Forms.ComboBox();
+            this.txtAlarmCode = new System.Windows.Forms.TextBox();
             this.cboStageSelect = new System.Windows.Forms.ComboBox();
             this.lblStage = new System.Windows.Forms.Label();
             this.btnTRU2PresentOnOff = new System.Windows.Forms.Button();
@@ -193,6 +197,10 @@
             // 
             // tbpProcList
             // 
+            this.tbpProcList.Controls.Add(this.lblAlarmCode);
+            this.tbpProcList.Controls.Add(this.lblAlarmPortSelect);
+            this.tbpProcList.Controls.Add(this.cboAlarmPortSelect);
+            this.tbpProcList.Controls.Add(this.txtAlarmCode);
             this.tbpProcList.Controls.Add(this.cboStageSelect);
             this.tbpProcList.Controls.Add(this.lblStage);
             this.tbpProcList.Controls.Add(this.btnTRU2PresentOnOff);
@@ -234,27 +242,70 @@
             this.tbpProcList.Location = new System.Drawing.Point(4, 22);
             this.tbpProcList.Name = "tbpProcList";
             this.tbpProcList.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpProcList.Size = new System.Drawing.Size(872, 409);
+            this.tbpProcList.Size = new System.Drawing.Size(897, 437);
             this.tbpProcList.TabIndex = 2;
             this.tbpProcList.Text = "Process List";
             this.tbpProcList.UseVisualStyleBackColor = true;
+            // 
+            // lblAlarmCode
+            // 
+            this.lblAlarmCode.AutoSize = true;
+            this.lblAlarmCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlarmCode.Location = new System.Drawing.Point(556, 253);
+            this.lblAlarmCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlarmCode.Name = "lblAlarmCode";
+            this.lblAlarmCode.Size = new System.Drawing.Size(88, 19);
+            this.lblAlarmCode.TabIndex = 202;
+            this.lblAlarmCode.Text = "Alarm Code";
+            // 
+            // lblAlarmPortSelect
+            // 
+            this.lblAlarmPortSelect.AutoSize = true;
+            this.lblAlarmPortSelect.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlarmPortSelect.Location = new System.Drawing.Point(554, 208);
+            this.lblAlarmPortSelect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlarmPortSelect.Name = "lblAlarmPortSelect";
+            this.lblAlarmPortSelect.Size = new System.Drawing.Size(84, 19);
+            this.lblAlarmPortSelect.TabIndex = 201;
+            this.lblAlarmPortSelect.Text = "Port Select";
+            // 
+            // cboAlarmPortSelect
+            // 
+            this.cboAlarmPortSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAlarmPortSelect.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cboAlarmPortSelect.FormattingEnabled = true;
+            this.cboAlarmPortSelect.Location = new System.Drawing.Point(650, 206);
+            this.cboAlarmPortSelect.Margin = new System.Windows.Forms.Padding(2);
+            this.cboAlarmPortSelect.Name = "cboAlarmPortSelect";
+            this.cboAlarmPortSelect.Size = new System.Drawing.Size(103, 26);
+            this.cboAlarmPortSelect.TabIndex = 200;
+            // 
+            // txtAlarmCode
+            // 
+            this.txtAlarmCode.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlarmCode.Location = new System.Drawing.Point(650, 253);
+            this.txtAlarmCode.Name = "txtAlarmCode";
+            this.txtAlarmCode.Size = new System.Drawing.Size(103, 23);
+            this.txtAlarmCode.TabIndex = 199;
+            this.txtAlarmCode.Text = "A508";
+            this.txtAlarmCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cboStageSelect
             // 
             this.cboStageSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboStageSelect.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cboStageSelect.FormattingEnabled = true;
-            this.cboStageSelect.Location = new System.Drawing.Point(378, 226);
+            this.cboStageSelect.Location = new System.Drawing.Point(108, 368);
             this.cboStageSelect.Margin = new System.Windows.Forms.Padding(2);
             this.cboStageSelect.Name = "cboStageSelect";
-            this.cboStageSelect.Size = new System.Drawing.Size(142, 26);
+            this.cboStageSelect.Size = new System.Drawing.Size(107, 26);
             this.cboStageSelect.TabIndex = 198;
             // 
             // lblStage
             // 
             this.lblStage.AutoSize = true;
             this.lblStage.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStage.Location = new System.Drawing.Point(269, 231);
+            this.lblStage.Location = new System.Drawing.Point(7, 370);
             this.lblStage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStage.Name = "lblStage";
             this.lblStage.Size = new System.Drawing.Size(92, 19);
@@ -264,7 +315,7 @@
             // btnTRU2PresentOnOff
             // 
             this.btnTRU2PresentOnOff.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.btnTRU2PresentOnOff.Location = new System.Drawing.Point(394, 364);
+            this.btnTRU2PresentOnOff.Location = new System.Drawing.Point(399, 365);
             this.btnTRU2PresentOnOff.Name = "btnTRU2PresentOnOff";
             this.btnTRU2PresentOnOff.Size = new System.Drawing.Size(126, 31);
             this.btnTRU2PresentOnOff.TabIndex = 196;
@@ -275,7 +326,7 @@
             // btnTRU1PresentOnOff
             // 
             this.btnTRU1PresentOnOff.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.btnTRU1PresentOnOff.Location = new System.Drawing.Point(262, 364);
+            this.btnTRU1PresentOnOff.Location = new System.Drawing.Point(399, 318);
             this.btnTRU1PresentOnOff.Name = "btnTRU1PresentOnOff";
             this.btnTRU1PresentOnOff.Size = new System.Drawing.Size(126, 31);
             this.btnTRU1PresentOnOff.TabIndex = 195;
@@ -286,7 +337,7 @@
             // btnLFTPresentOnOff
             // 
             this.btnLFTPresentOnOff.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLFTPresentOnOff.Location = new System.Drawing.Point(262, 322);
+            this.btnLFTPresentOnOff.Location = new System.Drawing.Point(248, 365);
             this.btnLFTPresentOnOff.Name = "btnLFTPresentOnOff";
             this.btnLFTPresentOnOff.Size = new System.Drawing.Size(126, 31);
             this.btnLFTPresentOnOff.TabIndex = 194;
@@ -297,7 +348,7 @@
             // btnPresentOn
             // 
             this.btnPresentOn.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPresentOn.Location = new System.Drawing.Point(394, 273);
+            this.btnPresentOn.Location = new System.Drawing.Point(248, 315);
             this.btnPresentOn.Name = "btnPresentOn";
             this.btnPresentOn.Size = new System.Drawing.Size(126, 31);
             this.btnPresentOn.TabIndex = 193;
@@ -308,9 +359,9 @@
             // btnResetPort
             // 
             this.btnResetPort.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetPort.Location = new System.Drawing.Point(716, 353);
+            this.btnResetPort.Location = new System.Drawing.Point(768, 248);
             this.btnResetPort.Name = "btnResetPort";
-            this.btnResetPort.Size = new System.Drawing.Size(109, 29);
+            this.btnResetPort.Size = new System.Drawing.Size(102, 29);
             this.btnResetPort.TabIndex = 188;
             this.btnResetPort.Text = "Reset Port";
             this.btnResetPort.UseVisualStyleBackColor = true;
@@ -319,9 +370,9 @@
             // btnPortAlarm
             // 
             this.btnPortAlarm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPortAlarm.Location = new System.Drawing.Point(601, 353);
+            this.btnPortAlarm.Location = new System.Drawing.Point(768, 204);
             this.btnPortAlarm.Name = "btnPortAlarm";
-            this.btnPortAlarm.Size = new System.Drawing.Size(109, 29);
+            this.btnPortAlarm.Size = new System.Drawing.Size(102, 29);
             this.btnPortAlarm.TabIndex = 187;
             this.btnPortAlarm.Text = "Port Alarm";
             this.btnPortAlarm.UseVisualStyleBackColor = true;
@@ -330,7 +381,7 @@
             // btnTRU1Interlock
             // 
             this.btnTRU1Interlock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU1Interlock.Location = new System.Drawing.Point(666, 261);
+            this.btnTRU1Interlock.Location = new System.Drawing.Point(671, 335);
             this.btnTRU1Interlock.Name = "btnTRU1Interlock";
             this.btnTRU1Interlock.Size = new System.Drawing.Size(87, 29);
             this.btnTRU1Interlock.TabIndex = 186;
@@ -341,7 +392,7 @@
             // btnTRU2Interlock
             // 
             this.btnTRU2Interlock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU2Interlock.Location = new System.Drawing.Point(667, 299);
+            this.btnTRU2Interlock.Location = new System.Drawing.Point(671, 370);
             this.btnTRU2Interlock.Name = "btnTRU2Interlock";
             this.btnTRU2Interlock.Size = new System.Drawing.Size(87, 29);
             this.btnTRU2Interlock.TabIndex = 185;
@@ -352,7 +403,7 @@
             // btnLFTInterlock
             // 
             this.btnLFTInterlock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLFTInterlock.Location = new System.Drawing.Point(665, 224);
+            this.btnLFTInterlock.Location = new System.Drawing.Point(670, 300);
             this.btnLFTInterlock.Name = "btnLFTInterlock";
             this.btnLFTInterlock.Size = new System.Drawing.Size(88, 29);
             this.btnLFTInterlock.TabIndex = 184;
@@ -363,9 +414,9 @@
             // btnTRU1Alarm
             // 
             this.btnTRU1Alarm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU1Alarm.Location = new System.Drawing.Point(564, 261);
+            this.btnTRU1Alarm.Location = new System.Drawing.Point(560, 335);
             this.btnTRU1Alarm.Name = "btnTRU1Alarm";
-            this.btnTRU1Alarm.Size = new System.Drawing.Size(108, 29);
+            this.btnTRU1Alarm.Size = new System.Drawing.Size(104, 29);
             this.btnTRU1Alarm.TabIndex = 183;
             this.btnTRU1Alarm.Text = "TRU1 Alarm";
             this.btnTRU1Alarm.UseVisualStyleBackColor = true;
@@ -374,9 +425,9 @@
             // btnTRU2Alarm
             // 
             this.btnTRU2Alarm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU2Alarm.Location = new System.Drawing.Point(565, 299);
+            this.btnTRU2Alarm.Location = new System.Drawing.Point(560, 370);
             this.btnTRU2Alarm.Name = "btnTRU2Alarm";
-            this.btnTRU2Alarm.Size = new System.Drawing.Size(108, 29);
+            this.btnTRU2Alarm.Size = new System.Drawing.Size(104, 29);
             this.btnTRU2Alarm.TabIndex = 182;
             this.btnTRU2Alarm.Text = "TRU2 Alarm";
             this.btnTRU2Alarm.UseVisualStyleBackColor = true;
@@ -385,9 +436,9 @@
             // btnLFTAlarm
             // 
             this.btnLFTAlarm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLFTAlarm.Location = new System.Drawing.Point(564, 224);
+            this.btnLFTAlarm.Location = new System.Drawing.Point(560, 300);
             this.btnLFTAlarm.Name = "btnLFTAlarm";
-            this.btnLFTAlarm.Size = new System.Drawing.Size(109, 29);
+            this.btnLFTAlarm.Size = new System.Drawing.Size(104, 29);
             this.btnLFTAlarm.TabIndex = 181;
             this.btnLFTAlarm.Text = "LFT Alarm";
             this.btnLFTAlarm.UseVisualStyleBackColor = true;
@@ -401,7 +452,7 @@
             this.cboSourceDest.Items.AddRange(new object[] {
             "Source",
             "Dest."});
-            this.cboSourceDest.Location = new System.Drawing.Point(410, 86);
+            this.cboSourceDest.Location = new System.Drawing.Point(409, 100);
             this.cboSourceDest.Margin = new System.Windows.Forms.Padding(2);
             this.cboSourceDest.Name = "cboSourceDest";
             this.cboSourceDest.Size = new System.Drawing.Size(71, 26);
@@ -411,7 +462,7 @@
             // btnInitLFT
             // 
             this.btnInitLFT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInitLFT.Location = new System.Drawing.Point(632, 62);
+            this.btnInitLFT.Location = new System.Drawing.Point(650, 71);
             this.btnInitLFT.Name = "btnInitLFT";
             this.btnInitLFT.Size = new System.Drawing.Size(103, 32);
             this.btnInitLFT.TabIndex = 101;
@@ -422,7 +473,7 @@
             // btnInitTRU1
             // 
             this.btnInitTRU1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInitTRU1.Location = new System.Drawing.Point(750, 62);
+            this.btnInitTRU1.Location = new System.Drawing.Point(768, 71);
             this.btnInitTRU1.Name = "btnInitTRU1";
             this.btnInitTRU1.Size = new System.Drawing.Size(102, 32);
             this.btnInitTRU1.TabIndex = 102;
@@ -433,7 +484,7 @@
             // button31
             // 
             this.button31.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button31.Location = new System.Drawing.Point(632, 102);
+            this.button31.Location = new System.Drawing.Point(650, 128);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(103, 30);
             this.button31.TabIndex = 179;
@@ -445,7 +496,7 @@
             // 
             this.lblCSTID.AutoSize = true;
             this.lblCSTID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCSTID.Location = new System.Drawing.Point(16, 273);
+            this.lblCSTID.Location = new System.Drawing.Point(7, 323);
             this.lblCSTID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCSTID.Name = "lblCSTID";
             this.lblCSTID.Size = new System.Drawing.Size(73, 19);
@@ -455,7 +506,7 @@
             // btnInitTRU2
             // 
             this.btnInitTRU2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInitTRU2.Location = new System.Drawing.Point(750, 100);
+            this.btnInitTRU2.Location = new System.Drawing.Point(768, 126);
             this.btnInitTRU2.Name = "btnInitTRU2";
             this.btnInitTRU2.Size = new System.Drawing.Size(102, 32);
             this.btnInitTRU2.TabIndex = 103;
@@ -467,7 +518,7 @@
             // 
             this.lblPortSelect.AutoSize = true;
             this.lblPortSelect.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPortSelect.Location = new System.Drawing.Point(14, 228);
+            this.lblPortSelect.Location = new System.Drawing.Point(7, 271);
             this.lblPortSelect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPortSelect.Name = "lblPortSelect";
             this.lblPortSelect.Size = new System.Drawing.Size(84, 19);
@@ -479,19 +530,19 @@
             this.cboPortSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPortSelect.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cboPortSelect.FormattingEnabled = true;
-            this.cboPortSelect.Location = new System.Drawing.Point(110, 226);
+            this.cboPortSelect.Location = new System.Drawing.Point(108, 269);
             this.cboPortSelect.Margin = new System.Windows.Forms.Padding(2);
             this.cboPortSelect.Name = "cboPortSelect";
-            this.cboPortSelect.Size = new System.Drawing.Size(142, 26);
+            this.cboPortSelect.Size = new System.Drawing.Size(107, 26);
             this.cboPortSelect.TabIndex = 130;
             this.cboPortSelect.SelectedIndexChanged += new System.EventHandler(this.cboPortSelect_SelectedIndexChanged);
             // 
             // btnModeChange
             // 
             this.btnModeChange.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModeChange.Location = new System.Drawing.Point(137, 366);
+            this.btnModeChange.Location = new System.Drawing.Point(399, 266);
             this.btnModeChange.Name = "btnModeChange";
-            this.btnModeChange.Size = new System.Drawing.Size(100, 25);
+            this.btnModeChange.Size = new System.Drawing.Size(110, 29);
             this.btnModeChange.TabIndex = 125;
             this.btnModeChange.Text = "In<>Out";
             this.btnModeChange.UseVisualStyleBackColor = true;
@@ -500,7 +551,7 @@
             // btnInitAll
             // 
             this.btnInitAll.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInitAll.Location = new System.Drawing.Point(690, 11);
+            this.btnInitAll.Location = new System.Drawing.Point(708, 20);
             this.btnInitAll.Name = "btnInitAll";
             this.btnInitAll.Size = new System.Drawing.Size(114, 32);
             this.btnInitAll.TabIndex = 100;
@@ -511,42 +562,42 @@
             // btnTRU1Reset
             // 
             this.btnTRU1Reset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU1Reset.Location = new System.Drawing.Point(749, 261);
+            this.btnTRU1Reset.Location = new System.Drawing.Point(771, 335);
             this.btnTRU1Reset.Name = "btnTRU1Reset";
-            this.btnTRU1Reset.Size = new System.Drawing.Size(99, 29);
+            this.btnTRU1Reset.Size = new System.Drawing.Size(83, 29);
             this.btnTRU1Reset.TabIndex = 129;
-            this.btnTRU1Reset.Text = "TRU1Reset";
+            this.btnTRU1Reset.Text = "Reset";
             this.btnTRU1Reset.UseVisualStyleBackColor = true;
             this.btnTRU1Reset.Click += new System.EventHandler(this.btnTRU1Reset_Click);
             // 
             // btnTRU2Reset
             // 
             this.btnTRU2Reset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRU2Reset.Location = new System.Drawing.Point(749, 299);
+            this.btnTRU2Reset.Location = new System.Drawing.Point(771, 370);
             this.btnTRU2Reset.Name = "btnTRU2Reset";
-            this.btnTRU2Reset.Size = new System.Drawing.Size(99, 29);
+            this.btnTRU2Reset.Size = new System.Drawing.Size(83, 29);
             this.btnTRU2Reset.TabIndex = 128;
-            this.btnTRU2Reset.Text = "TRU2Reset";
+            this.btnTRU2Reset.Text = "Reset";
             this.btnTRU2Reset.UseVisualStyleBackColor = true;
             this.btnTRU2Reset.Click += new System.EventHandler(this.btnTRU2Reset_Click);
             // 
             // btnLFTReset
             // 
             this.btnLFTReset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLFTReset.Location = new System.Drawing.Point(749, 226);
+            this.btnLFTReset.Location = new System.Drawing.Point(771, 300);
             this.btnLFTReset.Name = "btnLFTReset";
-            this.btnLFTReset.Size = new System.Drawing.Size(99, 29);
+            this.btnLFTReset.Size = new System.Drawing.Size(83, 29);
             this.btnLFTReset.TabIndex = 127;
-            this.btnLFTReset.Text = "LFT Reset";
+            this.btnLFTReset.Text = "Reset";
             this.btnLFTReset.UseVisualStyleBackColor = true;
             this.btnLFTReset.Click += new System.EventHandler(this.btnLFTReset_Click);
             // 
             // btnRemoved
             // 
             this.btnRemoved.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoved.Location = new System.Drawing.Point(20, 366);
+            this.btnRemoved.Location = new System.Drawing.Point(399, 214);
             this.btnRemoved.Name = "btnRemoved";
-            this.btnRemoved.Size = new System.Drawing.Size(97, 25);
+            this.btnRemoved.Size = new System.Drawing.Size(110, 28);
             this.btnRemoved.TabIndex = 121;
             this.btnRemoved.Text = "Removed";
             this.btnRemoved.UseVisualStyleBackColor = true;
@@ -555,7 +606,7 @@
             // picPortFunc
             // 
             this.picPortFunc.Image = ((System.Drawing.Image)(resources.GetObject("picPortFunc.Image")));
-            this.picPortFunc.Location = new System.Drawing.Point(2, 163);
+            this.picPortFunc.Location = new System.Drawing.Point(30, 192);
             this.picPortFunc.Margin = new System.Windows.Forms.Padding(2);
             this.picPortFunc.Name = "picPortFunc";
             this.picPortFunc.Size = new System.Drawing.Size(151, 47);
@@ -566,10 +617,10 @@
             // picEQInit
             // 
             this.picEQInit.Image = ((System.Drawing.Image)(resources.GetObject("picEQInit.Image")));
-            this.picEQInit.Location = new System.Drawing.Point(485, 5);
+            this.picEQInit.Location = new System.Drawing.Point(505, 20);
             this.picEQInit.Margin = new System.Windows.Forms.Padding(2);
             this.picEQInit.Name = "picEQInit";
-            this.picEQInit.Size = new System.Drawing.Size(133, 136);
+            this.picEQInit.Size = new System.Drawing.Size(133, 138);
             this.picEQInit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picEQInit.TabIndex = 125;
             this.picEQInit.TabStop = false;
@@ -588,9 +639,9 @@
             // btnWaitOut
             // 
             this.btnWaitOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWaitOut.Location = new System.Drawing.Point(137, 324);
+            this.btnWaitOut.Location = new System.Drawing.Point(248, 266);
             this.btnWaitOut.Name = "btnWaitOut";
-            this.btnWaitOut.Size = new System.Drawing.Size(97, 25);
+            this.btnWaitOut.Size = new System.Drawing.Size(109, 29);
             this.btnWaitOut.TabIndex = 117;
             this.btnWaitOut.Text = "Wait Out";
             this.btnWaitOut.UseVisualStyleBackColor = true;
@@ -604,7 +655,7 @@
             this.cboWhere.Items.AddRange(new object[] {
             "Pick up",
             "Deposite"});
-            this.cboWhere.Location = new System.Drawing.Point(316, 86);
+            this.cboWhere.Location = new System.Drawing.Point(315, 100);
             this.cboWhere.Margin = new System.Windows.Forms.Padding(2);
             this.cboWhere.Name = "cboWhere";
             this.cboWhere.Size = new System.Drawing.Size(71, 26);
@@ -615,7 +666,7 @@
             // 
             this.rdbtnAbnormal.AutoSize = true;
             this.rdbtnAbnormal.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rdbtnAbnormal.Location = new System.Drawing.Point(154, 53);
+            this.rdbtnAbnormal.Location = new System.Drawing.Point(153, 67);
             this.rdbtnAbnormal.Margin = new System.Windows.Forms.Padding(2);
             this.rdbtnAbnormal.Name = "rdbtnAbnormal";
             this.rdbtnAbnormal.Size = new System.Drawing.Size(166, 23);
@@ -629,7 +680,7 @@
             this.rdbtnNormal.AutoSize = true;
             this.rdbtnNormal.Checked = true;
             this.rdbtnNormal.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rdbtnNormal.Location = new System.Drawing.Point(154, 20);
+            this.rdbtnNormal.Location = new System.Drawing.Point(153, 34);
             this.rdbtnNormal.Margin = new System.Windows.Forms.Padding(2);
             this.rdbtnNormal.Name = "rdbtnNormal";
             this.rdbtnNormal.Size = new System.Drawing.Size(148, 23);
@@ -642,11 +693,12 @@
             // txtCSTID
             // 
             this.txtCSTID.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTID.Location = new System.Drawing.Point(110, 273);
+            this.txtCSTID.Location = new System.Drawing.Point(108, 323);
             this.txtCSTID.Name = "txtCSTID";
-            this.txtCSTID.Size = new System.Drawing.Size(142, 23);
+            this.txtCSTID.Size = new System.Drawing.Size(107, 23);
             this.txtCSTID.TabIndex = 111;
             this.txtCSTID.Text = "CST_ID";
+            this.txtCSTID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cboAbnormal
             // 
@@ -658,7 +710,7 @@
             "TRU_1(Alarm)",
             "TRU_2(Interlock)",
             "TRU_2(Alarm)"});
-            this.cboAbnormal.Location = new System.Drawing.Point(164, 86);
+            this.cboAbnormal.Location = new System.Drawing.Point(163, 100);
             this.cboAbnormal.Margin = new System.Windows.Forms.Padding(2);
             this.cboAbnormal.Name = "cboAbnormal";
             this.cboAbnormal.Size = new System.Drawing.Size(142, 26);
@@ -668,9 +720,9 @@
             // btnBCRReadDown
             // 
             this.btnBCRReadDown.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBCRReadDown.Location = new System.Drawing.Point(18, 324);
+            this.btnBCRReadDown.Location = new System.Drawing.Point(248, 214);
             this.btnBCRReadDown.Name = "btnBCRReadDown";
-            this.btnBCRReadDown.Size = new System.Drawing.Size(97, 25);
+            this.btnBCRReadDown.Size = new System.Drawing.Size(109, 28);
             this.btnBCRReadDown.TabIndex = 109;
             this.btnBCRReadDown.Text = "Wait In";
             this.btnBCRReadDown.UseVisualStyleBackColor = true;
@@ -684,7 +736,7 @@
             this.tbpTRU2.Location = new System.Drawing.Point(4, 22);
             this.tbpTRU2.Margin = new System.Windows.Forms.Padding(2);
             this.tbpTRU2.Name = "tbpTRU2";
-            this.tbpTRU2.Size = new System.Drawing.Size(872, 409);
+            this.tbpTRU2.Size = new System.Drawing.Size(897, 437);
             this.tbpTRU2.TabIndex = 3;
             this.tbpTRU2.Text = "TRU2";
             this.tbpTRU2.UseVisualStyleBackColor = true;
@@ -725,7 +777,7 @@
             this.tbpTRU1.Location = new System.Drawing.Point(4, 22);
             this.tbpTRU1.Name = "tbpTRU1";
             this.tbpTRU1.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpTRU1.Size = new System.Drawing.Size(872, 409);
+            this.tbpTRU1.Size = new System.Drawing.Size(897, 437);
             this.tbpTRU1.TabIndex = 1;
             this.tbpTRU1.Text = "TRU1";
             this.tbpTRU1.UseVisualStyleBackColor = true;
@@ -766,7 +818,7 @@
             this.tbpLFT.Location = new System.Drawing.Point(4, 22);
             this.tbpLFT.Name = "tbpLFT";
             this.tbpLFT.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpLFT.Size = new System.Drawing.Size(872, 409);
+            this.tbpLFT.Size = new System.Drawing.Size(897, 437);
             this.tbpLFT.TabIndex = 0;
             this.tbpLFT.Text = "LFT";
             this.tbpLFT.UseVisualStyleBackColor = true;
@@ -807,14 +859,14 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 52);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(880, 435);
+            this.tabControl1.Size = new System.Drawing.Size(905, 463);
             this.tabControl1.TabIndex = 3;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 498);
+            this.ClientSize = new System.Drawing.Size(917, 527);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.lblConn_PLC_Name);
@@ -907,9 +959,10 @@
         private System.Windows.Forms.Button btnTRU1PresentOnOff;
         private System.Windows.Forms.Button btnLFTPresentOnOff;
         private System.Windows.Forms.Button btnPresentOn;
-
-
-
+        private System.Windows.Forms.Label lblAlarmCode;
+        private System.Windows.Forms.Label lblAlarmPortSelect;
+        private System.Windows.Forms.ComboBox cboAlarmPortSelect;
+        private System.Windows.Forms.TextBox txtAlarmCode;
     }
 }
 

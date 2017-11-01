@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
 [assembly: AssemblyTitle("LFT_Sim")]
-[assembly: AssemblyDescription("MDT(Fork Type)")]
+[assembly: AssemblyDescription("Fork Type")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mirle")]
 [assembly: AssemblyProduct("LFT_Sim")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 您可以指定所有的值，也可以依照以下的方式，使用 '*' 將組建和修訂編號
 // 指定為預設值:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.4.1709.0")]
-[assembly: AssemblyFileVersion("2.4.1709.0")]
+[assembly: AssemblyVersion("2.5.1711.0")]
+[assembly: AssemblyFileVersion("2.5.1711.0")]

@@ -1,4 +1,8 @@
 ﻿#region V1.0.0.0_New Version
+/// V2.5.1711.0    20171101    VicChen 
+///      V2.5.1711.0-1  Add        ->   針對Port Alarm新增可以選取哪一個Port，可輸入需要的Alarm Code
+///      V2.5.1711.0-2  Modify     ->   UI微調位置
+///      
 /// V2.4.1709.0    20170918    VicChen 
 ///      V2.4.1709.0-1  Add        ->   將寫入位址偏移值，及第一、二樓層初始以Setting方式設定，可整合Lifter及TRU Simulator
 ///      
@@ -126,15 +130,18 @@ namespace WinLFT_Test
             this.Text = "Mirle Lifter_Simulator (V." + Application.ProductVersion + ")";
 
             cboPortSelect.Items.Clear();
+            cboAlarmPortSelect.Items.Clear();
             cboStageSelect.Items.Clear();
             for (int i = 0; i < Mirle.clsLC_Def.dicCONDef.Count; i++) 
             {
                 if (Mirle.clsLC_Def.dicCONDef[i].PortType == 3)
                 {
                     cboPortSelect.Items.Add(Mirle.clsLC_Def.dicCONDef[i].HostEQPortID);
+                    cboAlarmPortSelect.Items.Add(Mirle.clsLC_Def.dicCONDef[i].HostEQPortID);
                 }
             }
             cboPortSelect.SelectedIndex = -1;
+            cboAlarmPortSelect.SelectedIndex = -1;
             TRU1._iTRU = 0; 
             TRU2._iTRU = 1;
             tmMainProc.Enabled = true;
@@ -1371,37 +1378,38 @@ namespace WinLFT_Test
 
         private void btnPortAlarm_Click(object sender, EventArgs e)
         {
-            if (clsLifterMPLC.MPLC.LFC_C.C2LFC[0].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2C[0].PCErrorIdx)
+            if (clsLifterMPLC.MPLC.LFC_C.C2LFC[cboAlarmPortSelect.SelectedIndex].ErrorIdx == clsLifterMPLC.MPLC.LFC_C.LFC2C[cboAlarmPortSelect.SelectedIndex].PCErrorIdx)
             {
-                PortErrorIndex = clsLifterMPLC.MPLC.LFC_C.C2LFC[0].ErrorIdx;
+                PortErrorIndex = clsLifterMPLC.MPLC.LFC_C.C2LFC[cboAlarmPortSelect.SelectedIndex].ErrorIdx;
                 PortErrorIndex++;
 
-                string temp = PortAlarmcode.ToString();
+                string sAlarmCode = txtAlarmCode.Text;
+                string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                 string sData = temp;
-                string sAddr = "D" + LFC.iAddrPortErrorCode; //Port  error code
+                string sAddr = "D" + (LFC.iAddrPortErrorCode + (cboAlarmPortSelect.SelectedIndex * 60)); //Port  error code
                 LFC.FunWriPLC_Word(sAddr, sData);
 
                 sData = PortErrorIndex.ToString();
-                sAddr = "D" + LFC.iAddrPortErrorIndex; //Port  error index
+                sAddr = "D" + (LFC.iAddrPortErrorIndex + (cboAlarmPortSelect.SelectedIndex * 60)); //Port  error index
                 LFC.FunWriPLC_Word(sAddr, sData);
 
-                //sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
-                //LFC.FunWriPLC_Bit(sAddr, 1); //Port error on
+                sAddr = "D" + (LFC.iAddrPortErrorBit + (cboAlarmPortSelect.SelectedIndex * 60)) + ".2";
+                LFC.FunWriPLC_Bit(sAddr, 1); //Port error on
             }
         }
 
         private void btnResetPort_Click(object sender, EventArgs e)
         {
-            string sAddr = "D" + LFC.iAddrPortErrorBit + ".2";
+            string sAddr = "D" + (LFC.iAddrPortErrorBit + (cboAlarmPortSelect.SelectedIndex * 60)) + ".2";
             bool bRet = LFC.FunWriPLC_Bit(sAddr, 0); //Port error off
 
-            sAddr = "D" + LFC.iAddrPortErrorCode;
+            sAddr = "D" + (LFC.iAddrPortErrorCode + (cboAlarmPortSelect.SelectedIndex * 60));
             bRet = LFC.FunWriPLC_Word(sAddr, 0); // Clear error code
 
             PortErrorIndex++;
             string sData = PortErrorIndex.ToString();
-            sAddr = "D" + LFC.iAddrPortErrorIndex; //Port  error index
+            sAddr = "D" + (LFC.iAddrPortErrorIndex + (cboAlarmPortSelect.SelectedIndex * 60)); //Port  error index
             bRet = LFC.FunWriPLC_Word(sAddr, sData);
         }
 

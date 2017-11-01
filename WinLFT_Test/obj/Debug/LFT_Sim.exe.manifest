@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Lifter.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="LFT_Sim" version="2.4.1709.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="LFT_Sim" version="2.5.1711.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="LFT_Sim.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -73,13 +73,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsLifterMPLC.dll" size="65536">
-      <assemblyIdentity name="clsLifterMPLC" version="7.1.1709.1" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="clsLifterMPLC" version="6.0.1709.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hSypjQ0jPCwo6GiDg4KEhgea4klbtNVhEkqHXYJBPJE=</dsig:DigestValue>
+        <dsig:DigestValue>bqWu3vCUmfQuAvpanSNjqZ5VTmXOlTIpsXc4IfgARyg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -120,14 +120,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="83904">
-      <assemblyIdentity name="LFT_Sim" version="2.4.1709.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="84928">
+      <assemblyIdentity name="LFT_Sim" version="2.5.1711.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IWSlv8duoCd2bYgr5yr7puwrnmDajwtZ8cYhXwfOod8=</dsig:DigestValue>
+        <dsig:DigestValue>mWA+bd/m6Lke8D5yyAe+TSYzD/yR9RtaihFNya3MTNc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,7 +139,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SMCy1UzrXTnbNjZbn/WaOD9zI+uHuFjmhM/Ebv8thvo=</dsig:DigestValue>
+        <dsig:DigestValue>QTOKlmK8BO0+QUVcjWDHvJhA6tHncVjEjZqB0XCvuaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
