@@ -308,4 +308,3 @@ D:\Lifter相關\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\L
 D:\Lifter相關\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csproj.CoreCompileInputs.cache
 D:\Lifter相關\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.dll
 D:\Lifter相關\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.pdb
-D:\Lifter相關\MDT Lifter與PNP相關\MDT Fork Type Lifter & PnP(Source Code)\Lifter\WinLFT_Test\PLC\obj\Debug\PLC.csprojResolveAssemblyReference.cache

@@ -59,11 +59,7 @@ namespace WinLFT_Test
         int TRU2step = 0;
         int LFTstep = 0;
         //用來決定模擬的步驟
-
-        int LFTalarmcode = 41254;//切換成16進制，即DB的Alarmcode
-        int TRU1alarmcode = 41984;
-        int TRU2alarmcode = 41985;
-        int PortAlarmcode = 4365;
+        
         int LFTErrorIndex = 0;
         int TRU1ErrorIndex = 0;
         int TRU2ErrorIndex = 0;
@@ -305,7 +301,8 @@ namespace WinLFT_Test
                                 LFTErrorIndex = clsLifterMPLC.MPLC.LFC_C.L2LFC.ErrorIdx;
                                 LFTErrorIndex++;
 
-                                string temp = LFTalarmcode.ToString();
+                                string sAlarmCode = txtAlarmCode.Text;
+                                string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                                 sData = temp;
                                 sAddr = "D" + LFC.iAddrLFT_ErrorCode; //LFT  error code
@@ -397,7 +394,8 @@ namespace WinLFT_Test
                                 LFTErrorIndex = clsLifterMPLC.MPLC.LFC_C.L2LFC.ErrorIdx;
                                 LFTErrorIndex++;
 
-                                string temp = LFTalarmcode.ToString();
+                                string sAlarmCode = txtAlarmCode.Text;
+                                string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                                 sData = temp;
                                 sAddr = "D" + LFC.iAddrLFT_ErrorCode; //LFT  error code
@@ -540,8 +538,8 @@ namespace WinLFT_Test
                             TRU1ErrorIndex = clsLifterMPLC.MPLC.LFC_C.T2LFC[0].ErrorIdx;
                             TRU1ErrorIndex++;
 
-                            string temp = TRU1alarmcode.ToString();
-
+                            string sAlarmCode = txtAlarmCode.Text;
+                            string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                             sData = temp;
                             sAddr = "D" + LFC.iAddrTRU1_ErrorCode; //TRU  error code
@@ -637,8 +635,8 @@ namespace WinLFT_Test
                             TRU1ErrorIndex = clsLifterMPLC.MPLC.LFC_C.T2LFC[0].ErrorIdx;
                             TRU1ErrorIndex++;
 
-                            string temp = TRU1alarmcode.ToString();
-
+                            string sAlarmCode = txtAlarmCode.Text;
+                            string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                             sData = temp;
                             sAddr = "D" + LFC.iAddrTRU1_ErrorCode; //LFT  error code
@@ -792,7 +790,8 @@ namespace WinLFT_Test
                             TRU2ErrorIndex = clsLifterMPLC.MPLC.LFC_C.T2LFC[1].ErrorIdx;
                             TRU2ErrorIndex++;
 
-                            string temp = TRU2alarmcode.ToString();
+                            string sAlarmCode = txtAlarmCode.Text;
+                            string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                             sData = temp;
                             sAddr = "D" + LFC.iAddrTRU2_ErrorCode; //LFT  error code
@@ -892,7 +891,8 @@ namespace WinLFT_Test
                             TRU2ErrorIndex = clsLifterMPLC.MPLC.LFC_C.T2LFC[1].ErrorIdx;
                             TRU2ErrorIndex++;
 
-                            string temp = TRU2alarmcode.ToString();
+                            string sAlarmCode = txtAlarmCode.Text;
+                            string temp = Int32.Parse(sAlarmCode, System.Globalization.NumberStyles.HexNumber).ToString();
 
                             sData = temp;
                             sAddr = "D" + LFC.iAddrTRU2_ErrorCode; //LFT  error code
