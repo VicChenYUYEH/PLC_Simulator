@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Lifter.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="LFT_Sim" version="2.5.1711.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="LFT_Sim" version="2.6.1712.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="LFT_Sim.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -121,25 +121,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="83968">
-      <assemblyIdentity name="LFT_Sim" version="2.5.1711.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="LFT_Sim" version="2.6.1712.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vMztPExQ1nHjCjEB/E1pWwja1e3PqhOoWdgJt7RSl1k=</dsig:DigestValue>
+        <dsig:DigestValue>TBBR2fxQ0CH/MMRJU6lAshGZfZcZRx62Qw4C1U3xXt0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PLC.dll" size="138752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PLC.dll" size="137728">
       <assemblyIdentity name="PLC" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>utFJN223Wy/V1nd4dVP5r9vOV0J6MEJH2h8tWZt2FNw=</dsig:DigestValue>
+        <dsig:DigestValue>8PO43INpMkCJt36CwBqxL616DagWsXV5wHAa6CvzDOg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,4 +1,8 @@
 ﻿#region V1.0.0.0_New Version
+/// V2.6.1712.0    20171205    VicChen 
+///      V2.6.1712.0-1  Modify     ->   取消TRU與LFT之間的交握流程控制。
+///      V2.6.1712.0-2  Modify     ->   修正初始化Conveyor的訊號。
+///      
 /// V2.5.1711.0    20171101    VicChen 
 ///      V2.5.1711.0-1  Add        ->   針對Port Alarm新增可以選取哪一個Port，可輸入需要的Alarm Code
 ///      V2.5.1711.0-2  Modify     ->   UI微調位置
@@ -1236,12 +1240,16 @@ namespace WinLFT_Test
         {
             for (int i = 0; i < 4; i++)
             {
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i], 0);
+                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts2[i], 0);
+                LFC.FunWriPLC_Word("D" + LFC.iAddrPortCmd[i], "0,0");
+                LFC.FunWriPLC_Word("D" + LFC.iAddrPortClearSts[i], "0,0,0,0,0,0,0");
+
                 LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".0", 1);
                 if (i % 2 == 0)
                 {
                     LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".3", 1);
                     LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".4", 0);
-
                 }
                 else
                 {
@@ -1252,18 +1260,6 @@ namespace WinLFT_Test
                 LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".B", 1);
                 LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".C", 1);
                 LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts1[i] + ".D", 0);
-            }
-            for (int i = 0; i < 4; i++)
-            {
-                LFC.FunWriPLC_Bit("D" + LFC.iAddrPortSts2[i] + ".0", 0);
-            }
-            for (int i = 0; i < 4; i++)
-            {
-                LFC.FunWriPLC_Word("D" + LFC.iAddrPortClearSts[i], "0,0,0,0,0,0,0");
-            }
-            for (int i = 0; i < 4; i++)
-            {
-                LFC.FunWriPLC_Word("D" + LFC.iAddrPortCmd[i], "0,0");
             }
         }
 
