@@ -43,11 +43,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Oracle.DataAccess" version="4.112.3.0" publicKeyToken="89B483F429C47342" language="neutral" processorArchitecture="x86" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsDB_C.dll" size="84992">
       <assemblyIdentity name="clsDB_C" version="1.4.1702.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -73,13 +68,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsLifterMPLC.dll" size="65536">
-      <assemblyIdentity name="clsLifterMPLC" version="6.0.1709.1" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="clsLifterMPLC" version="7.2.1712.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bqWu3vCUmfQuAvpanSNjqZ5VTmXOlTIpsXc4IfgARyg=</dsig:DigestValue>
+        <dsig:DigestValue>i5T7iRZlnwgpN/GBy17wyRVSBwkiVb3nMt/0csAqVck=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -120,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="83968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LFT_Sim.exe" size="75264">
       <assemblyIdentity name="LFT_Sim" version="2.6.1712.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TBBR2fxQ0CH/MMRJU6lAshGZfZcZRx62Qw4C1U3xXt0=</dsig:DigestValue>
+        <dsig:DigestValue>NB1gZRM9CqR6aoIExCYCF8SSiH0SgDMtuYFqQReZFfg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8PO43INpMkCJt36CwBqxL616DagWsXV5wHAa6CvzDOg=</dsig:DigestValue>
+        <dsig:DigestValue>pnEdhtaOMpMtB6TWPW0R+77D13MWiBzAaU7iI8ygRk0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

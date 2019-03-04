@@ -1063,7 +1063,7 @@ namespace PLC
             }
             else
             {
-                FunWriPLC_Bit("D" + iAddr + "." + (StageNo - 1).ToString(), 1); //荷有
+                //FunWriPLC_Bit("D" + iAddr + "." + (StageNo - 1).ToString(), 1); //荷有
                 iAddr = Properties.Settings.Default.MPLC_StartAddr + (281 + 60 * PLCIdx);
                 for (int i = 0; i < 7; i++)
                 {
