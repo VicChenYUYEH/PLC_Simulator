@@ -67,9 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsDB.cs" />
-    <Compile Include="clsLC_Def.cs" />
-    <Compile Include="clsLC_SubFun.cs" />
+    <Compile Include="clsDLL.cs" />
     <Compile Include="CONV.cs">
       <SubType>UserControl</SubType>
     </Compile>

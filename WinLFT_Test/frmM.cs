@@ -127,17 +127,17 @@ namespace WinLFT_Test
             objLFC.subStart(Config);
 
             ChkAppIsAlreadyRunning();
-            this.Text = "Mirle Lifter_Simulator (V." + Application.ProductVersion + ")";
+            this.Text = "Lifter_Simulator (V." + Application.ProductVersion + ")";
 
             cboPortSelect.Items.Clear();
             cboAlarmPortSelect.Items.Clear();
             cboStageSelect.Items.Clear();
-            for (int i = 0; i < Mirle.clsLC_Def.dicCONDef.Count; i++) 
+            for (int i = 0; i < Component.clsLC_Def.dicCONDef.Count; i++) 
             {
-                if (Mirle.clsLC_Def.dicCONDef[i].PortType == 3)
+                if (Component.clsLC_Def.dicCONDef[i].PortType == 3)
                 {
-                    cboPortSelect.Items.Add(Mirle.clsLC_Def.dicCONDef[i].HostEQPortID);
-                    cboAlarmPortSelect.Items.Add(Mirle.clsLC_Def.dicCONDef[i].HostEQPortID);
+                    cboPortSelect.Items.Add(Component.clsLC_Def.dicCONDef[i].HostEQPortID);
+                    cboAlarmPortSelect.Items.Add(Component.clsLC_Def.dicCONDef[i].HostEQPortID);
                 }
             }
             cboPortSelect.SelectedIndex = -1;
@@ -1415,7 +1415,7 @@ namespace WinLFT_Test
             {
                 int[] sData = new int[7];
                 sData = LFC.funString2int(txtCSTID.Text, 7);
-                LFC.PresentOnOff(Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, Convert.ToInt32(cboStageSelect.Text), sData);
+                LFC.PresentOnOff(Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, Convert.ToInt32(cboStageSelect.Text), sData);
             }
         }
 
@@ -1452,7 +1452,7 @@ namespace WinLFT_Test
         private void cboPortSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
             cboStageSelect.Items.Clear();
-            for (int i = 1; i <= Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].Stage; i++)
+            for (int i = 1; i <= Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].Stage; i++)
             {
                 cboStageSelect.Items.Add(i);
             }
@@ -1469,13 +1469,13 @@ namespace WinLFT_Test
                 int[] sData = new int[7];
                 sData = LFC.funString2int(txtCSTID.Text, 7);
 
-                LFC.Wait_In(Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, sData);
+                LFC.Wait_In(Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, sData);
             }
         }
 
         private void btnRemoved_Click(object sender, EventArgs e)
         {
-            LFC.Remove(Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex);
+            LFC.Remove(Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex);
         }
 
         private void btnWaitOut_Click_1(object sender, EventArgs e)
@@ -1483,12 +1483,12 @@ namespace WinLFT_Test
             int[] sData = new int[7];
             sData = LFC.funString2int(txtCSTID.Text, 7);
 
-            LFC.Wait_Out(Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, sData);
+            LFC.Wait_Out(Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex, sData);
         }
 
         private void btnModeChange_Click_1(object sender, EventArgs e)
         {
-            LFC.ModeChange(Mirle.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex);
+            LFC.ModeChange(Component.clsLC_Def.dicCONDef[cboPortSelect.SelectedIndex].PLCindex);
         }
 
         #endregion
